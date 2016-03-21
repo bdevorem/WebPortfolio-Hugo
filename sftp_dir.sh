@@ -1,4 +1,9 @@
 #!/bin/sh
+# usage: sftp_dir.sh [Destination Directory] [Source Directory] [Destination Server]
+# with defaults set up for my NetFile space for the University of Notre Dame
+
+# This script was created because the NetFile space did not allow for scp or rsync
+# It allows for a recursive upload of a directory over sftp, and is a complete bandaid fix
 DEST_DIR=${1:-'NetFile/www'}
 SRC_DIR=${2:-'public'}
 DEST_SERVER=${3:-'jwesthof@webfile.nd.edu'}
