@@ -1,4 +1,6 @@
 deploy: website
 	./sftp_dir.sh
-website:
+website: clean
 	hugo --theme=allegiant
+clean:
+	rm -rf public

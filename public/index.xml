@@ -6,8 +6,29 @@
     <description>Recent content on Web Portfolio of John Westhoff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Mar 2016 21:08:52 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 05 Apr 2016 00:48:25 -0400</lastBuildDate>
     <atom:link href="http://nd.edu/~jwesthof/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Wolfrat Chatbot</title>
+      <link>http://nd.edu/~jwesthof/post/wolfratbot/</link>
+      <pubDate>Tue, 05 Apr 2016 00:48:25 -0400</pubDate>
+      
+      <guid>http://nd.edu/~jwesthof/post/wolfratbot/</guid>
+      <description>&lt;p&gt;My friends and I primarily communicate through a &lt;a href=&#34;https://groupme.com&#34;&gt;GroupMe&lt;/a&gt; chat that we named &lt;strong&gt;Wolfrat&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;To liven the place up, I thought I would add a chatbot.&lt;/p&gt;
+
+&lt;p&gt;So, I quickly threw together (over a day or so) WolfratBot, which uses the
+GroupMe bot API. The API HTTP POSTS a given callback URL, which is set to
+a (WSGI)[&lt;a href=&#34;https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface&#34;&gt;https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface&lt;/a&gt;]
+script that decides on the appropriate reply.&lt;br /&gt;
+The program is very modular, and new functionality can be added without
+disrupting any other modules.&lt;/p&gt;
+
+&lt;p&gt;The source is available on my &lt;a href=&#34;https://github.com/JohnathonNow/wolfratbot&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Fundamentals of Computing I Final</title>
