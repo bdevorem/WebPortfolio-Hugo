@@ -1,5 +1,5 @@
 +++
-date = "2016-04-05T00:48:25-04:00"
+date = "2016-04-05T01:18:53-04:00"
 draft = false
 title = "Wolfrat Chatbot"
 
@@ -12,7 +12,7 @@ To liven the place up, I thought I would add a chatbot.
 
 So, I quickly threw together (over a day or so) WolfratBot, which uses the
 GroupMe bot API. The API HTTP POSTS a given callback URL, which is set to
-a (WSGI)[https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface]
+a [WSGI](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface)
 script that decides on the appropriate reply.  
 The program is very modular, and new functionality can be added without
 disrupting any other modules. 
