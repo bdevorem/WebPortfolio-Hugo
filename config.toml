@@ -2,6 +2,6 @@ baseurl = "http://nd.edu/~jwesthof"
 languageCode = "en-us"
 title = "Web Portfolio of John Westhoff"
 [params]
-    bio = "I am currently a sophomore Computer Science student at the University of Notre Dame."
+    bio = "I am currently a sophomore Computer Science student at the University of Notre Dame. I am interested in Robotics, and I help coach a local South Bend team. I am a member of the Notre Dame Linux Users Group. I enjoy working on side projects, some of which I intend to post here."
     github = "http://github.com/johnathonnow"
     linkedin = "https://www.linkedin.com/in/johnjwesthoff"
