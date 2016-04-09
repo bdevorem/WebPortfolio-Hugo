@@ -6,3 +6,4 @@ deploy: website
 website: 
 	hugo --theme=allegiant
 	rm ./public/post/adlib/index.html
+	cp ./content/post/adlib.php ./public/post/adlib/index.php
