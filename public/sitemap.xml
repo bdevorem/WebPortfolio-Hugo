@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://www.johnbot.me/</loc>
+    <lastmod>2016-04-09T02:02:53-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.johnbot.me/post/adlib/</loc>
+    <lastmod>2016-04-09T02:02:53-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.johnbot.me/post/Test/</loc>
+    <lastmod>2016-04-08T01:09:53-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.johnbot.me/post/wolfratbot/</loc>
+    <lastmod>2016-04-05T01:18:53-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.johnbot.me/post/fndcmp1final/</loc>
+    <lastmod>2016-03-20T21:08:52-04:00</lastmod>
+  </url>
+  
+</urlset>
