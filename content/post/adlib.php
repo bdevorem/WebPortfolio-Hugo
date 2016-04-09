@@ -270,7 +270,7 @@ if ($text != '')
 <div class="entry-links"></div>
 </article>
 <div class="share-icons-body">
-  <a href="http://www.twitter.com/share?url=http%3a%2f%2fwww.johnbot.me%2fpost%2fadlib%2f" target="_blank">
+  <a href="http://www.twitter.com/share?url=<?php echo rawurlencode($surl); ?>" target="_blank">
   <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
   <g>
     <g>
@@ -287,7 +287,7 @@ if ($text != '')
         S459.64,584.182,306,584.182S27.818,459.64,27.818,306z"/>
     </g>
   </svg></a>
-  <a href="http://plus.google.com/share?url=http%3a%2f%2fwww.johnbot.me%2fpost%2fadlib%2f" target="_blank">
+  <a href="http://plus.google.com/share?url=<?php echo rawurlencode($surl); ?>" target="_blank">
   <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
     <g>
       <g>
@@ -308,7 +308,7 @@ if ($text != '')
           S459.64,584.182,306,584.182S27.818,459.64,27.818,306z"/>
       </g>
   </svg></a>
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.johnbot.me%2fpost%2fadlib%2f" target="_blank">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo rawurlencode($surl); ?>" target="_blank">
   <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
   <g>
