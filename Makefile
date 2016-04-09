@@ -4,6 +4,6 @@ deploy: website
 	git commit
 	git push
 website: clean
-	hugo --theme=hugo-cactus-theme
+	hugo --theme=allegiant
 clean:
 	rm -rf public
