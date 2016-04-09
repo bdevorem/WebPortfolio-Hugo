@@ -1,9 +1,8 @@
 deploy: website
-	./sftp_dir.sh
+	[ `hostname` != 'johnbot.me' ] && ./sftp_dir.sh ; true
 	git add *
 	git commit
 	git push
-website: clean
+website: 
 	hugo --theme=allegiant
-clean:
-	rm -rf public
+	rm ./public/post/adlib/index.html
