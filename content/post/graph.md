@@ -33,6 +33,4 @@ nx.draw_networkx(g,ax=ax)
 plt.show()
 ```
 
-
 ![png](output_2_0.png)
-
