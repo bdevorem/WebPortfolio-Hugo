@@ -356,7 +356,7 @@ footer .menu-item a:hover {
     margin-left: 24px
 }
 .header {
-    height: 500px;
+    height: 360px;
     margin-bottom: 60px
 }
 .divider {
@@ -400,7 +400,7 @@ footer .menu-item a:hover {
     float: right
 }
 .post-heading {
-    height: 350px;
+    height: 250px;
     width: 50%;
     margin-left: 25%;
     display: table;
@@ -762,7 +762,7 @@ tr td:hover {
         width: 100%;
     }
     .header {
-        height: 300px;
+        height: 200px;
     }
     .lower {
         display: block;
