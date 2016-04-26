@@ -356,7 +356,7 @@ footer .menu-item a:hover {
     margin-left: 24px
 }
 .header {
-    height: 360px;
+    height: 400px;
     margin-bottom: 60px
 }
 .divider {
@@ -445,7 +445,7 @@ figure strong {
     border-bottom: 1px #fff solid
 }
 img {
-    width: 100%;
+    width: 60%;
     height: auto
 }
 article img {
@@ -762,7 +762,7 @@ tr td:hover {
         width: 100%;
     }
     .header {
-        height: 200px;
+        height: 300px;
     }
     .lower {
         display: block;

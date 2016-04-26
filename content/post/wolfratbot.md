@@ -19,5 +19,8 @@ script that decides on the appropriate reply.
 The program is very modular, and new functionality can be added without
 disrupting any other modules. 
 
+A simple exchange follows:  
+![png](20160425_224532.png)
+
 The source is available on my [github](https://github.com/JohnathonNow/wolfratbot).
 

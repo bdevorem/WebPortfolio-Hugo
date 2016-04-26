@@ -26,6 +26,9 @@ script that decides on the appropriate reply.&lt;br /&gt;
 The program is very modular, and new functionality can be added without
 disrupting any other modules.&lt;/p&gt;
 
+&lt;p&gt;A simple exchange follows:&lt;br /&gt;
+&lt;img src=&#34;20160425_224532.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
 &lt;p&gt;The source is available on my &lt;a href=&#34;https://github.com/JohnathonNow/wolfratbot&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
