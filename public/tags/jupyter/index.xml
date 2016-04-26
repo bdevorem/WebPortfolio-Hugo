@@ -6,43 +6,8 @@
     <description>Recent content in Jupyter on Web Portfolio of John Westhoff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Apr 2016 16:35:53 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 08 Apr 2016 01:09:53 -0400</lastBuildDate>
     <atom:link href="http://www.johnbot.me/tags/jupyter/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>NetworkX Test</title>
-      <link>http://www.johnbot.me/post/graph/</link>
-      <pubDate>Mon, 25 Apr 2016 16:35:53 -0400</pubDate>
-      
-      <guid>http://www.johnbot.me/post/graph/</guid>
-      <description>
-
-&lt;p&gt;Once again, I was playing around with &lt;a href=&#34;http://jupyter.org/&#34;&gt;Jupyter&lt;/a&gt;. This time I was more interested in seeing how it handled
-&lt;a href=&#34;https://networkx.github.io/&#34;&gt;NetworkX&lt;/a&gt;. It seemed to work fairly well, though
-the kernel died using above 500 connected nodes.&lt;/p&gt;
-
-&lt;h1 id=&#34;networks:a19daf9fc78b45c9ed76d76b3768d270&#34;&gt;Networks&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import networkx as nx
-g = nx.nx.erdos_renyi_graph(5,1)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import matplotlib.pyplot as plt
-%matplotlib inline
-
-fig, ax = plt.subplots()
-ax.grid(False)
-ax.xaxis.set_visible(False)
-ax.yaxis.set_visible(False)
-
-nx.draw_networkx(g,ax=ax)
-
-plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;output_2_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Jupyter Test</title>
