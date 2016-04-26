@@ -2,6 +2,7 @@
 date = "2016-04-25T16:35:53-04:00"
 draft = false
 title = "NetworkX Test"
+#FeaturedImage = "output_2_0.png"
 tags = [ "Jupyter" ]
 categories = [ "Jupyter" ]
 series = [ "Jupyter" ]
