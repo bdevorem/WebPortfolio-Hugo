@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://www.johnbot.me/</loc>
-    <lastmod>2016-04-09T02:02:53-04:00</lastmod>
+    <lastmod>2016-04-25T16:35:53-04:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.johnbot.me/post/graph/</loc>
+    <lastmod>2016-04-25T16:35:53-04:00</lastmod>
   </url>
   
   <url>
@@ -25,10 +30,6 @@
   <url>
     <loc>http://www.johnbot.me/post/fndcmp1final/</loc>
     <lastmod>2016-03-20T21:08:52-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.johnbot.me/post/graph/</loc>
   </url>
   
 </urlset>

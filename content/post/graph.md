@@ -1,9 +1,20 @@
-
++++
+date = "2016-04-25T16:35:53-04:00"
+draft = false
+title = "NetworkX Test"
+tags = [ "Jupyter" ]
+categories = [ "Jupyter" ]
+series = [ "Jupyter" ]
++++
+Once again, I was playing around with [Jupyter](http://jupyter.org/). This time I was more interested in seeing how it handled 
+[NetworkX](https://networkx.github.io/). It seemed to work fairly well, though
+the kernel died using above 500 connected nodes.
+<!--more-->
 Networks
 ========
 
 Create a Erdős–Rényi random graph.
--------
+------
 
 
 ```python
@@ -12,7 +23,7 @@ g = nx.erdos_renyi_graph(20,0.10)
 ```
 
 Plot the graph
-------
+-----
 
 
 ```python
