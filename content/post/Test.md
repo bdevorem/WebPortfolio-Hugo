@@ -2,7 +2,9 @@
 date = "2016-04-08T01:09:53-04:00"
 draft = false
 title = "Jupyter Test"
-
+tags = [ "Jupyter" ]
+categories = [ "Jupyter" ]
+series = [ "Jupyter" ]
 +++
 I was playing around with [Jupyter](http://jupyter.org/), namely its feature
 that allows exporting as a markdown file, and since this site is built with

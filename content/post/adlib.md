@@ -4,6 +4,7 @@ draft = false
 title = "(M)adlib Filler Outer"
 tags = [ "madlibs" ]
 categories = [ "For Fun" ]
+series = [ "Fun" ]
 +++
 A simple PHP program for filling out blanks in a madlib.
 <!--more-->

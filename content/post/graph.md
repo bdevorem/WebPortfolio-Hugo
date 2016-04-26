@@ -2,7 +2,9 @@
 date = "2016-04-25T16:35:53-04:00"
 draft = false
 title = "NetworkX Test"
-
+tags = [ "Jupyter" ]
+categories = [ "Jupyter" ]
+series = [ "Jupyter" ]
 +++
 Once again, I was playing around with [Jupyter](http://jupyter.org/). This time I was more interested in seeing how it handled 
 [NetworkX](https://networkx.github.io/). It seemed to work fairly well, though

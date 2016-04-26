@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>For Fun on Web Portfolio of John Westhoff</title>
-    <link>http://www.johnbot.me/categories/for-fun/</link>
-    <description>Recent content in For Fun on Web Portfolio of John Westhoff</description>
+    <title>Wolfratbot on Web Portfolio of John Westhoff</title>
+    <link>http://www.johnbot.me/tags/wolfratbot/</link>
+    <description>Recent content in Wolfratbot on Web Portfolio of John Westhoff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Apr 2016 02:02:53 -0400</lastBuildDate>
-    <atom:link href="http://www.johnbot.me/categories/for-fun/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>(M)adlib Filler Outer</title>
-      <link>http://www.johnbot.me/post/adlib/</link>
-      <pubDate>Sat, 09 Apr 2016 02:02:53 -0400</pubDate>
-      
-      <guid>http://www.johnbot.me/post/adlib/</guid>
-      <description>&lt;p&gt;A simple PHP program for filling out blanks in a madlib.&lt;/p&gt;
-
-&lt;p&gt;WORDS&lt;/p&gt;
-</description>
-    </item>
+    <lastBuildDate>Tue, 05 Apr 2016 01:18:53 -0400</lastBuildDate>
+    <atom:link href="http://www.johnbot.me/tags/wolfratbot/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Wolfrat Chatbot</title>

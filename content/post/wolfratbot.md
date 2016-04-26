@@ -2,7 +2,9 @@
 date = "2016-04-05T01:18:53-04:00"
 draft = false
 title = "Wolfrat Chatbot"
-
+tags = [ "Projects", "Chatbot", "Wolfratbot" ]
+categories = [ "For Fun" ]
+series = [ "Wolfratbot" ]
 +++
 
 My friends and I primarily communicate through a [GroupMe]

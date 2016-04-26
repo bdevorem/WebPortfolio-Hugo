@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>School on Web Portfolio of John Westhoff</title>
+    <link>http://www.johnbot.me/categories/school/</link>
+    <description>Recent content in School on Web Portfolio of John Westhoff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Mar 2016 21:08:52 -0400</lastBuildDate>
+    <atom:link href="http://www.johnbot.me/categories/school/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fundamentals of Computing I Final</title>
+      <link>http://www.johnbot.me/post/fndcmp1final/</link>
+      <pubDate>Sun, 20 Mar 2016 21:08:52 -0400</pubDate>
+      
+      <guid>http://www.johnbot.me/post/fndcmp1final/</guid>
+      <description>&lt;p&gt;For my &lt;strong&gt;Fundamentals of Computing I&lt;/strong&gt; class final project,
+I decided to make a &lt;a href=&#34;https://en.wikipedia.org/wiki/Shoot_%27em_up#Types&#34;&gt;shmup&lt;/a&gt;.&lt;br /&gt;
+The game is played at a faster pace perhaps than it should have been,
+but I enjoyed making it.&lt;br /&gt;
+The graphics are very minimalistic, consisting almost entirely of circles.&lt;br /&gt;
+The game features a half-decent level intrepretation system, where
+levels are stored in text files with simple commands to handle enemies
+and other things. The system had support for branching and conditionals,
+though the only condition allowed was time. I had to exercise restraint
+to prevent myself from essentially making it a complete language of
+its own.&lt;/p&gt;
+
+&lt;p&gt;The game itself is &lt;em&gt;really&lt;/em&gt; hard.&lt;/p&gt;
+
+&lt;p&gt;The source is available on my &lt;a href=&#34;https://github.com/JohnathonNow/fndcmpifinal&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
