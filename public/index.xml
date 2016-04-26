@@ -23,7 +23,7 @@ the kernel died using above 500 connected nodes.&lt;/p&gt;
 
 &lt;h1 id=&#34;networks:a19daf9fc78b45c9ed76d76b3768d270&#34;&gt;Networks&lt;/h1&gt;
 
-&lt;h2 id=&#34;create-a-erdős-rényi-random-graph:a19daf9fc78b45c9ed76d76b3768d270&#34;&gt;Create a Erdős–Rényi random graph.&lt;/h2&gt;
+&lt;h2 id=&#34;create-a-erdős-rényi-random-graph:a19daf9fc78b45c9ed76d76b3768d270&#34;&gt;Create a Erdős–Rényi random graph&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import networkx as nx
 g = nx.erdos_renyi_graph(20,0.10)

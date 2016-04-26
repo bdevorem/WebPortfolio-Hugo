@@ -14,7 +14,7 @@ the kernel died using above 500 connected nodes.
 Networks
 ========
 
-Create a Erdős–Rényi random graph.
+Create a Erdős–Rényi random graph
 ------
 
 
