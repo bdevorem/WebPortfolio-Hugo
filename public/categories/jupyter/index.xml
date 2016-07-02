@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jupyter on Web Portfolio of John Westhoff</title>
-    <link>www.johnbot.me/categories/jupyter/</link>
+    <link>https://www.johnbot.me/categories/jupyter/</link>
     <description>Recent content in Jupyter on Web Portfolio of John Westhoff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Apr 2016 16:35:53 -0400</lastBuildDate>
-    <atom:link href="www.johnbot.me/categories/jupyter/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.johnbot.me/categories/jupyter/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>NetworkX Test</title>
-      <link>/www.johnbot.me/post/graph/</link>
+      <link>https://www.johnbot.me/post/graph/</link>
       <pubDate>Mon, 25 Apr 2016 16:35:53 -0400</pubDate>
       
-      <guid>/www.johnbot.me/post/graph/</guid>
+      <guid>https://www.johnbot.me/post/graph/</guid>
       <description>
 
 &lt;p&gt;Once again, I was playing around with &lt;a href=&#34;http://jupyter.org/&#34;&gt;Jupyter&lt;/a&gt;. This time I was more interested in seeing how it handled
@@ -48,10 +48,10 @@ nx.draw_networkx(g,ax=ax)
     
     <item>
       <title>Jupyter Test</title>
-      <link>/www.johnbot.me/post/Test/</link>
+      <link>https://www.johnbot.me/post/Test/</link>
       <pubDate>Fri, 08 Apr 2016 01:09:53 -0400</pubDate>
       
-      <guid>/www.johnbot.me/post/Test/</guid>
+      <guid>https://www.johnbot.me/post/Test/</guid>
       <description>
 
 &lt;p&gt;I was playing around with &lt;a href=&#34;http://jupyter.org/&#34;&gt;Jupyter&lt;/a&gt;, namely its feature

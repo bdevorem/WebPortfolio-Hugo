@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Web Portfolio of John Westhoff</title>
-    <link>www.johnbot.me/post/</link>
+    <link>https://www.johnbot.me/post/</link>
     <description>Recent content in Posts on Web Portfolio of John Westhoff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Apr 2016 16:35:53 -0400</lastBuildDate>
-    <atom:link href="www.johnbot.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.johnbot.me/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>NetworkX Test</title>
-      <link>/www.johnbot.me/post/graph/</link>
+      <link>https://www.johnbot.me/post/graph/</link>
       <pubDate>Mon, 25 Apr 2016 16:35:53 -0400</pubDate>
       
-      <guid>/www.johnbot.me/post/graph/</guid>
+      <guid>https://www.johnbot.me/post/graph/</guid>
       <description>
 
 &lt;p&gt;Once again, I was playing around with &lt;a href=&#34;http://jupyter.org/&#34;&gt;Jupyter&lt;/a&gt;. This time I was more interested in seeing how it handled
@@ -48,10 +48,10 @@ nx.draw_networkx(g,ax=ax)
     
     <item>
       <title>(M)adlib Filler Outer</title>
-      <link>/www.johnbot.me/post/adlib/</link>
+      <link>https://www.johnbot.me/post/adlib/</link>
       <pubDate>Sat, 09 Apr 2016 02:02:53 -0400</pubDate>
       
-      <guid>/www.johnbot.me/post/adlib/</guid>
+      <guid>https://www.johnbot.me/post/adlib/</guid>
       <description>&lt;p&gt;A simple PHP program for filling out blanks in a madlib.&lt;/p&gt;
 
 &lt;p&gt;WORDS&lt;/p&gt;
@@ -60,10 +60,10 @@ nx.draw_networkx(g,ax=ax)
     
     <item>
       <title>Jupyter Test</title>
-      <link>/www.johnbot.me/post/Test/</link>
+      <link>https://www.johnbot.me/post/Test/</link>
       <pubDate>Fri, 08 Apr 2016 01:09:53 -0400</pubDate>
       
-      <guid>/www.johnbot.me/post/Test/</guid>
+      <guid>https://www.johnbot.me/post/Test/</guid>
       <description>
 
 &lt;p&gt;I was playing around with &lt;a href=&#34;http://jupyter.org/&#34;&gt;Jupyter&lt;/a&gt;, namely its feature
@@ -123,10 +123,10 @@ plt.show()
     
     <item>
       <title>Wolfrat Chatbot</title>
-      <link>/www.johnbot.me/post/wolfratbot/</link>
+      <link>https://www.johnbot.me/post/wolfratbot/</link>
       <pubDate>Tue, 05 Apr 2016 01:18:53 -0400</pubDate>
       
-      <guid>/www.johnbot.me/post/wolfratbot/</guid>
+      <guid>https://www.johnbot.me/post/wolfratbot/</guid>
       <description>&lt;p&gt;My friends and I primarily communicate through a &lt;a href=&#34;https://groupme.com&#34;&gt;GroupMe&lt;/a&gt; chat that we named &lt;strong&gt;Wolfrat&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;To liven the place up, I thought I would add a chatbot.&lt;/p&gt;
@@ -147,10 +147,10 @@ disrupting any other modules.&lt;/p&gt;
     
     <item>
       <title>Fundamentals of Computing I Final</title>
-      <link>/www.johnbot.me/post/fndcmp1final/</link>
+      <link>https://www.johnbot.me/post/fndcmp1final/</link>
       <pubDate>Sun, 20 Mar 2016 21:08:52 -0400</pubDate>
       
-      <guid>/www.johnbot.me/post/fndcmp1final/</guid>
+      <guid>https://www.johnbot.me/post/fndcmp1final/</guid>
       <description>&lt;p&gt;For my &lt;strong&gt;Fundamentals of Computing I&lt;/strong&gt; class final project,
 I decided to make a &lt;a href=&#34;https://en.wikipedia.org/wiki/Shoot_%27em_up#Types&#34;&gt;shmup&lt;/a&gt;.&lt;br /&gt;
 The game is played at a faster pace perhaps than it should have been,

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notre Dame on Web Portfolio of John Westhoff</title>
-    <link>www.johnbot.me/tags/notre-dame/</link>
+    <link>https://www.johnbot.me/tags/notre-dame/</link>
     <description>Recent content in Notre Dame on Web Portfolio of John Westhoff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Mar 2016 21:08:52 -0400</lastBuildDate>
-    <atom:link href="www.johnbot.me/tags/notre-dame/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.johnbot.me/tags/notre-dame/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Fundamentals of Computing I Final</title>
-      <link>/www.johnbot.me/post/fndcmp1final/</link>
+      <link>https://www.johnbot.me/post/fndcmp1final/</link>
       <pubDate>Sun, 20 Mar 2016 21:08:52 -0400</pubDate>
       
-      <guid>/www.johnbot.me/post/fndcmp1final/</guid>
+      <guid>https://www.johnbot.me/post/fndcmp1final/</guid>
       <description>&lt;p&gt;For my &lt;strong&gt;Fundamentals of Computing I&lt;/strong&gt; class final project,
 I decided to make a &lt;a href=&#34;https://en.wikipedia.org/wiki/Shoot_%27em_up#Types&#34;&gt;shmup&lt;/a&gt;.&lt;br /&gt;
 The game is played at a faster pace perhaps than it should have been,
