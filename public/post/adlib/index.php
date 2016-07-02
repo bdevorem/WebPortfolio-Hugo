@@ -8,9 +8,9 @@
 <!-- A simple web form for getting randomly filled madlibs -->
 
 <?php
-$ADJEFILE = '/home/john/wolfratbot/modules/adlib/adjectivelist.txt';
-$NOUNFILE = '/home/john/wolfratbot/modules/adlib/nounlist.txt';
-$VERBFILE = '/home/john/wolfratbot/modules/adlib/verblist.txt';
+$ADJEFILE = '/home/john/wolfratbot/src/modules/adlib/adjectivelist.txt';
+$NOUNFILE = '/home/john/wolfratbot/src/modules/adlib/nounlist.txt';
+$VERBFILE = '/home/john/wolfratbot/src/modules/adlib/verblist.txt';
 if (strlen($_POST['story']) > 0)
 {
     $text = trim($_POST['story']);

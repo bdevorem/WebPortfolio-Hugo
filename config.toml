@@ -1,4 +1,4 @@
-baseurl = "http://www.johnbot.me/"
+baseurl = "www.johnbot.me/"
 languageCode = "en-us"
 title = "Web Portfolio of John Westhoff"
 [params]

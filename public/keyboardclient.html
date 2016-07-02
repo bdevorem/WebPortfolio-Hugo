@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WebSocket Keyboard V1.0</title>
+  <meta charset="UTF-8" />
+  <script>
+    "use strict";
+    window.addEventListener("load", 
+        function(event)
+        {
+            var serverURL = document.getElementById("url"); // the url for the server as set by the url text box
+            var open = document.getElementById("open"); // the open button
+            var text = document.getElementById("text"); // the keyboard input text box
+            var gSocket; // the WebSocket for communicating with the server
+
+            serverURL.value = "ws://192.168.1.11:8080"; // default ip and port
+
+            var lastLength = 0; // store the last length of the string - for word deletion and autocomplete
+
+            text.addEventListener("keydown", 
+                function(event) 
+                {
+                    var curLength = text.value.length;
+                    if (curLength < lastLength) // if we are missing characters
+                    {
+                        sendKey(gSocket, lastLength - curLength, "back"); // send a number of backspaces
+                    }
+                    else if (curLength > lastLength) // if we gained characters
+                    {
+                        sendKey(gSocket, text.value.substring(lastLength), "type"); // send what we gained
+                    }
+                    lastLength = curLength; // update our previous length
+                });
+
+            // Create a new connection when the Connect button is clicked
+            open.addEventListener("click", 
+                function(event)
+                {
+                    gSocket = new WebSocket(serverURL.value, "keyboard");
+                });
+        });
+    
+    // Send key commands to the server
+    // type is the type of command
+    //      "type" - the keyboard will type in the string contained in id
+    //      "back" - the keyboard will press backspace id times
+    function sendKey(socket, id, type)
+    {
+        var toSend = {
+            id: id,
+            type: type,
+        };
+        socket.send(JSON.stringify(toSend));
+    }
+  </script>
+</head>
+<body>
+  URL: <input id="url" /><br />
+  <input id="open" type="button" value="Connect" />&nbsp;
+  <input id="text" /><br />
+</body>
+</html>
