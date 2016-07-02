@@ -39,15 +39,15 @@ else
 {
     $text = $_GET['stored_story'];
 }
-$surl = 'http://www.johnbot.me/post/adlib/?stored_story=' . urlencode($text);
+$surl = 'https://www.johnbot.me/post/adlib/?stored_story=' . urlencode($text);
  ?>
 <html lang="en-us">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
   <title>(M)adlib Filler Outer &middot; Web Portfolio of John Westhoff</title>
-  <link rel="stylesheet" href="http://www.johnbot.me//css/style.css" />
-  <link rel="stylesheet" href="http://www.johnbot.me//css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://www.johnbot.me//css/style.css" />
+  <link rel="stylesheet" href="https://www.johnbot.me//css/font-awesome.min.css" />
   <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,600' rel='stylesheet' type='text/css'>
 <style type="text/css">
 .form-style-7{
@@ -132,7 +132,7 @@ $surl = 'http://www.johnbot.me/post/adlib/?stored_story=' . urlencode($text);
 </head>
 <body>
 <header class="header" style="background-color: #009DDC;
-    background-image: url(http://www.johnbot.me//img/texture.png),linear-gradient(to bottom, #009DDC, #006ccb);background-repeat: repeat, no-repeat;background-position: left top, left top;background-size: 100px 100px, 100% 100%;" role="banner">
+    background-image: url(https://www.johnbot.me//img/texture.png),linear-gradient(to bottom, #009DDC, #006ccb);background-repeat: repeat, no-repeat;background-position: left top, left top;background-size: 100px 100px, 100% 100%;" role="banner">
 
       <section id="branding">
         <div id="site-title"><a href="http://www.johnbot.me/">Web Portfolio of John Westhoff</a></div>
