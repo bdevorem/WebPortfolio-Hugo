@@ -1,1 +1,1 @@
-I am currently a sophomore Computer Science student at the University of Notre Dame. I am interested in Robotics, and I help coach a local South Bend team. I am a member of the Notre Dame Linux Users Group. I enjoy working on side projects, some of which I intend to post here.
+I am currently a rising Junior Computer Science student at the University of Notre Dame. I am interested in Robotics, and I help coach a local South Bend team. I am a member of the Notre Dame Linux Users Group. I enjoy working on side projects, some of which I intend to post here.
