@@ -255,7 +255,7 @@ if ($text != '')
     Use {a} for adjectives<br>
 </dd>
 <li>
-    <button>Make My a Story</button>
+    <button>Make Me a Story</button>
 </li>
 </ul>
 <h2>
