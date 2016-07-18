@@ -172,7 +172,10 @@ the <code>pwl-list</code> function. This saved me from having to write my own.</
 <p>After recreating the loudness of the first track, I find the loudness of the second. By subtracting
 the two (expressed in decibel form rather than linear) with an offset of X db added to the second track,
 converting the result back to a linear scale and multiply it by the second track, I am able to ensure
-that the loudness of the second track mirros the loudness of the first, offset by X db.</p>
+that the loudness of the second track mirros the loudness of the first, offset by X db. This works because the decibel unit is logarithmic, and one property
+of logarithms is log(x) + log(y) = log(x*y). So, to change an amplitude X by Y
+units, we subtract the two and multiply X by the result expressed back in linear
+form.</p>
 
 <p><img src="end_waveform.png" alt="png" /><br />
 The final set of waveforms. Notice that the second set of waveforms has a similar shape to the first set,
