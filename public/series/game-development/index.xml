@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Game Development on Web Portfolio of John Westhoff</title>
+    <link>https://www.johnbot.me/series/game-development/</link>
+    <description>Recent content in Game Development on Web Portfolio of John Westhoff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Jul 2016 23:24:00 -0400</lastBuildDate>
+    <atom:link href="https://www.johnbot.me/series/game-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Multiplayer Spaceship Game</title>
+      <link>https://www.johnbot.me/post/vrremake/</link>
+      <pubDate>Sun, 17 Jul 2016 23:24:00 -0400</pubDate>
+      
+      <guid>https://www.johnbot.me/post/vrremake/</guid>
+      <description>
+
+&lt;p&gt;Back between 2008 and 2011, I spent a fair bit of time on
+&lt;a href=&#34;www.funorb.com&#34;&gt;FunOrb&lt;/a&gt;.
+One of their most interesting games was their last official release,
+&lt;a href=&#34;http://www.funorb.com/info.ws?game=voidhunters&#34;&gt;Void Hunters&lt;/a&gt;.
+Unfortunately, FunOrb did not last much longer than that, as there has only been
+a small handful of updates since then, and with the death of NPAPI Plugins, the
+Java-based gaming site has virtually no chance of being revived.&lt;/p&gt;
+
+&lt;p&gt;Some time around my freshman year at Notre Dame, I decided that it would be fun
+to recreate the game. As a huge fan of split screen gaming, my version would not
+be online, but rather it would be played with a shared split screen and several
+XBOX 360 controllers.&lt;/p&gt;
+
+&lt;h2 id=&#34;anything-interesting-about-it:532fe2ef5e90928298cc7a64fdd6eb1e&#34;&gt;Anything Interesting About It?&lt;/h2&gt;
+
+&lt;p&gt;Maybe.&lt;br /&gt;
+The game itself essentially broke everything into two groups -
+Entities (such as bullets, stars, asteroids, and nebula)
+and Components (things that make up ships, like hull pieces
+and thrusters). The Components are the more interesting of the two, as they
+collectively form a symmetric directed graph. There are container pieces,
+such as hulls, that can have other components attached to them as well
+as be attached to other pieces, and other components that can only be attached.
+Container pieces each contain references to their attached pieces, and
+all pieces contain references to their holders. This makes it easy
+for any one component to affect its holder (for instance, a thruster
+adds impulse to its holder) and for any holder to affect its components (for
+example, a blown up hull might destroy all of its components).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;bam.png&#34; alt=&#34;png&#34; /&gt;
+The game looks pretty, if I do say so myself.&lt;/p&gt;
+
+&lt;h2 id=&#34;any-problems:532fe2ef5e90928298cc7a64fdd6eb1e&#34;&gt;Any Problems?&lt;/h2&gt;
+
+&lt;p&gt;Yes.&lt;br /&gt;
+Using Java might have been a mistake, as I might have gotten better performance
+out of C or C++. The game has pretty big performance issues, especially with
+rather large ships colliding, and this is with just two people.
+I also should have learned a bit more about graph theory before
+starting, as I hadn&amp;rsquo;t even had an introduction to it before, and perhaps I would
+have written things a bit more efficiently had I done it today with more knowledge.
+Learning more OpenGL would have also been a big plus, since it was my first time
+using the library. I also wish I had documented things more thoroughly.
+I may restart the project, if I have the time.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/JohnathonNow/VH-Remake&#34;&gt;The source is available on my GitHub.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
