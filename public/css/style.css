@@ -440,7 +440,18 @@ input {
 }
 figure strong {
     font-size: .85em
+
 }
+
+figure figcaption {
+    border: 1px dotted blue;
+    text-align: center;
+}
+
+figure img {
+    width: 80%;
+}
+
 #mainmenu .current-menu-item a {
     border-bottom: 1px #fff solid
 }

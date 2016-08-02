@@ -6,8 +6,81 @@
     <description>Recent content on Web Portfolio of John Westhoff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Jul 2016 23:24:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 28 Jul 2016 23:24:00 -0400</lastBuildDate>
     <atom:link href="https://www.johnbot.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Legacy - Why Names Are Important and You Should Always RTFM</title>
+      <link>https://www.johnbot.me/post/rpgii/</link>
+      <pubDate>Thu, 28 Jul 2016 23:24:00 -0400</pubDate>
+      
+      <guid>https://www.johnbot.me/post/rpgii/</guid>
+      <description>&lt;p&gt;My summer job always ends up being a grab bag of
+different assignments, ranging from IT tasks such
+as installing a new network switch or deracking
+an old server to more developer tasks such as
+writing a document management program. Most recently,
+however, I was tasked with updating some of their legacy
+programs that run on their &lt;a href=&#34;https://en.wikipedia.org/wiki/IBM_System_i&#34;&gt;IBM AS400&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The more impactful change I was instructed to make
+was to reverse the sort order on a list of jobs for
+a given company - since 1991 they were listed in
+ascending order, meaning users had to scroll to get
+to the newest jobs. I copied their old source file to a
+new one, and made the necessary changes.
+Unfortunately, this is where my trouble began.&lt;/p&gt;
+
+&lt;p&gt;I successfully compiled the program with my changes, and I
+created a new procedure for running it. I ran this new procedure,
+and immediately got an error about how it was unable to open
+the file &amp;ldquo;WK&amp;rdquo;, which was a &lt;a href=&#34;http://publib.boulder.ibm.com/iseries/v5r2/ic2924/books/c092507426.htm&#34;&gt;workstation file&lt;/a&gt;.
+At first I assumed that one of my changes was to blame, but
+I needed more data to confirm - so I copied the original source
+again and compiled it without change (other than the program name, of couse).
+Well, wouldn&amp;rsquo;t you know it, it gave the same error! Was the original code
+faulty? That seemed unlikely.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;maybeimthefool.png&#34; alt=&#34;I&amp;#39;m certain this system is out to get me.&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        I&amp;#39;m certain this system is out to get me.
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;The next day I had off, and my dad, who is more familiar with the IBM system
+but far less familiar with programming, continued my work. To test whether
+it was the original source to blame or something we did wrong in compiling it,
+he compiled another less critical program, and it ran without complaint.&lt;br /&gt;
+This seemed to confirm that the original source was incorrect, but I was not satisfied.
+I was sure there was something we missed, and luckily the room the old IBM was in
+was full of reference manuals.&lt;/p&gt;
+
+&lt;p&gt;After I read the RPG II reference manuel for a bit,
+I stumpled upon a section detailing the optional line continuation arguments
+for specifying a workstation file.&lt;br /&gt;
+One of the arguments, FMTS, specified a screen format file. This line was
+not present in the original source, and in this case it defaults to
+the program name with &amp;ldquo;FM&amp;rdquo; appended to the end. This was why we were getting
+an error about being unable to open a file! We had assumed we hadn&amp;rsquo;t changed
+anything, but since we changed the name of the program, it was trying to open
+a format file that didn&amp;rsquo;t exist! Adding that argument and pointing it to the
+right file fixed out issues - the source was fine, we just couldn&amp;rsquo;t copy
+it and compile it. The name of the program mattered, and we only figured
+that out by reading a manuel that&amp;rsquo;s several years older than I am.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Multiplayer Spaceship Game</title>
@@ -46,8 +119,23 @@ for any one component to affect its holder (for instance, a thruster
 adds impulse to its holder) and for any holder to affect its components (for
 example, a blown up hull might destroy all of its components).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;bam.png&#34; alt=&#34;png&#34; /&gt;
-The game looks pretty, if I do say so myself.&lt;/p&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;bam.png&#34; alt=&#34;The game looks pretty, if I do say so myself.&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        The game looks pretty, if I do say so myself.
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
 
 &lt;h2 id=&#34;any-problems:532fe2ef5e90928298cc7a64fdd6eb1e&#34;&gt;Any Problems?&lt;/h2&gt;
 
@@ -91,18 +179,45 @@ corresponding sample in the first track minus X. This is not at all what was act
 however, as that would merely produce the first track but X decibels quieter - it would not
 matter what the second track was, it would be entirely overwritten.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;starting_waveform.png&#34; alt=&#34;png&#34; /&gt;&lt;br /&gt;
-My set of starting waveforms (in order of Track 1 Left, Track 1 Right, Track 2 Left, Track
-2 Right). Track 1 was generated as a 440 Hz sine wave with some fading to shape it, while
-Track 2 was generated as a 4400 Hz uniform sine wave.&lt;/p&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;starting_waveform.png&#34; alt=&#34;My set of starting waveforms (in order of Track 1 Left, Track 1 Right, Track 2 Left, Track 2 Right). Track 1 was generated as a 440 Hz sine wave with some fading to shape it, while Track 2 was generated as a 4400 Hz uniform sine wave.&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        My set of starting waveforms (in order of Track 1 Left, Track 1 Right, Track 2 Left, Track 2 Right). Track 1 was generated as a 440 Hz sine wave with some fading to shape it, while Track 2 was generated as a 4400 Hz uniform sine wave.
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
 
 &lt;p&gt;Instead what I aimed to do was approximate the &amp;ldquo;loudness&amp;rdquo; over time by taking the absolute
 value of the waveform (so it is always positive), multiplying the waveform by the sqrt(2)
 (to keep it closer to the peaks of the waveform), and passing it through a &lt;a href=&#34;https://en.wikipedia.org/wiki/Low-pass_filter&#34;&gt;low-pass filter&lt;/a&gt; (to essentially make it a rolling average).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;rms_lowpassed_waveform.png&#34; alt=&#34;png&#34; /&gt;&lt;br /&gt;
-The result of my loudness function. Note that it approximates the &amp;ldquo;shape&amp;rdquo; and &amp;ldquo;size&amp;rdquo; of
-the prior waveforms.&lt;/p&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;rms_lowpassed_waveform.png&#34; alt=&#34;The result of my loudness function. Note that it approximates the &amp;#39;shape&amp;#39; and &amp;#39;size&amp;#39; of the prior waveforms.&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        The result of my loudness function. Note that it approximates the &amp;#39;shape&amp;#39; and &amp;#39;size&amp;#39; of the prior waveforms.
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
 
 &lt;h2 id=&#34;audacity-oddities:83c068686d9ce68651d7f4789470e27a&#34;&gt;Audacity Oddities&lt;/h2&gt;
 
@@ -137,10 +252,23 @@ of logarithms is log(x) + log(y) = log(x*y). So, to change an amplitude X by Y
 units, we subtract the two and multiply X by the result expressed back in linear
 form.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;end_waveform.png&#34; alt=&#34;png&#34; /&gt;&lt;br /&gt;
-The final set of waveforms. Notice that the second set of waveforms has a similar shape to the first set,
-while still keeping its musical properties (in this case, pitch). Perhaps a real song sample would show
-the results better - perhaps I will update the article with some public domain songs.&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;end_waveform.png&#34; alt=&#34;The final set of waveforms. Notice that the second set of waveforms has a similar shape to the first set, while still keeping its musical properties (in this case, pitch). Perhaps a real song sample would show the results better - perhaps I will update the article with some public domain songs.&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        The final set of waveforms. Notice that the second set of waveforms has a similar shape to the first set, while still keeping its musical properties (in this case, pitch). Perhaps a real song sample would show the results better - perhaps I will update the article with some public domain songs.
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
 
 &lt;p&gt;What I&amp;rsquo;ve done is not even close to being perfect, but it doesn&amp;rsquo;t really need to be. I feel it was
 a good introduction to a LISP dialect, and my friend was happy with the results.&lt;/p&gt;

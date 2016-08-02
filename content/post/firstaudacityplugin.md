@@ -24,19 +24,18 @@ corresponding sample in the first track minus X. This is not at all what was act
 however, as that would merely produce the first track but X decibels quieter - it would not
 matter what the second track was, it would be entirely overwritten.
 
-![png](starting_waveform.png)  
-My set of starting waveforms (in order of Track 1 Left, Track 1 Right, Track 2 Left, Track
-2 Right). Track 1 was generated as a 440 Hz sine wave with some fading to shape it, while
-Track 2 was generated as a 4400 Hz uniform sine wave.  
+{{< figure src="starting_waveform.png" 
+	   caption="My set of starting waveforms (in order of Track 1 Left, Track 1 Right, Track 2 Left, Track 2 Right). Track 1 was generated as a 440 Hz sine wave with some fading to shape it, while Track 2 was generated as a 4400 Hz uniform sine wave."
+>}}
 
 Instead what I aimed to do was approximate the "loudness" over time by taking the absolute
 value of the waveform (so it is always positive), multiplying the waveform by the sqrt(2)
 (to keep it closer to the peaks of the waveform), and passing it through a [low-pass filter]
 (https://en.wikipedia.org/wiki/Low-pass_filter) (to essentially make it a rolling average).
 
-![png](rms_lowpassed_waveform.png)  
-The result of my loudness function. Note that it approximates the "shape" and "size" of
-the prior waveforms.  
+{{< figure src="rms_lowpassed_waveform.png" 
+	   caption="The result of my loudness function. Note that it approximates the 'shape' and 'size' of the prior waveforms."
+>}}
 
 Audacity Oddities
 -------------
@@ -71,10 +70,9 @@ of logarithms is log(x) + log(y) = log(x*y). So, to change an amplitude X by Y
 units, we subtract the two and multiply X by the result expressed back in linear
 form. 
 
-![png](end_waveform.png)  
-The final set of waveforms. Notice that the second set of waveforms has a similar shape to the first set,
-while still keeping its musical properties (in this case, pitch). Perhaps a real song sample would show
-the results better - perhaps I will update the article with some public domain songs.  
+{{< figure src="end_waveform.png" 
+	   caption="The final set of waveforms. Notice that the second set of waveforms has a similar shape to the first set, while still keeping its musical properties (in this case, pitch). Perhaps a real song sample would show the results better - perhaps I will update the article with some public domain songs."
+>}}
 
 What I've done is not even close to being perfect, but it doesn't really need to be. I feel it was
 a good introduction to a LISP dialect, and my friend was happy with the results.  

@@ -131,18 +131,45 @@ corresponding sample in the first track minus X. This is not at all what was act
 however, as that would merely produce the first track but X decibels quieter - it would not
 matter what the second track was, it would be entirely overwritten.</p>
 
-<p><img src="starting_waveform.png" alt="png" /><br />
-My set of starting waveforms (in order of Track 1 Left, Track 1 Right, Track 2 Left, Track
-2 Right). Track 1 was generated as a 440 Hz sine wave with some fading to shape it, while
-Track 2 was generated as a 4400 Hz uniform sine wave.</p>
+
+<figure >
+    
+        <img src="starting_waveform.png" alt="My set of starting waveforms (in order of Track 1 Left, Track 1 Right, Track 2 Left, Track 2 Right). Track 1 was generated as a 440 Hz sine wave with some fading to shape it, while Track 2 was generated as a 4400 Hz uniform sine wave." />
+    
+    
+    <figcaption>
+        <p>
+        My set of starting waveforms (in order of Track 1 Left, Track 1 Right, Track 2 Left, Track 2 Right). Track 1 was generated as a 440 Hz sine wave with some fading to shape it, while Track 2 was generated as a 4400 Hz uniform sine wave.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
 
 <p>Instead what I aimed to do was approximate the &ldquo;loudness&rdquo; over time by taking the absolute
 value of the waveform (so it is always positive), multiplying the waveform by the sqrt(2)
 (to keep it closer to the peaks of the waveform), and passing it through a <a href="https://en.wikipedia.org/wiki/Low-pass_filter">low-pass filter</a> (to essentially make it a rolling average).</p>
 
-<p><img src="rms_lowpassed_waveform.png" alt="png" /><br />
-The result of my loudness function. Note that it approximates the &ldquo;shape&rdquo; and &ldquo;size&rdquo; of
-the prior waveforms.</p>
+
+<figure >
+    
+        <img src="rms_lowpassed_waveform.png" alt="The result of my loudness function. Note that it approximates the &#39;shape&#39; and &#39;size&#39; of the prior waveforms." />
+    
+    
+    <figcaption>
+        <p>
+        The result of my loudness function. Note that it approximates the &#39;shape&#39; and &#39;size&#39; of the prior waveforms.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
 
 <h2 id="audacity-oddities:83c068686d9ce68651d7f4789470e27a">Audacity Oddities</h2>
 
@@ -177,10 +204,23 @@ of logarithms is log(x) + log(y) = log(x*y). So, to change an amplitude X by Y
 units, we subtract the two and multiply X by the result expressed back in linear
 form.</p>
 
-<p><img src="end_waveform.png" alt="png" /><br />
-The final set of waveforms. Notice that the second set of waveforms has a similar shape to the first set,
-while still keeping its musical properties (in this case, pitch). Perhaps a real song sample would show
-the results better - perhaps I will update the article with some public domain songs.</p>
+<p>
+<figure >
+    
+        <img src="end_waveform.png" alt="The final set of waveforms. Notice that the second set of waveforms has a similar shape to the first set, while still keeping its musical properties (in this case, pitch). Perhaps a real song sample would show the results better - perhaps I will update the article with some public domain songs." />
+    
+    
+    <figcaption>
+        <p>
+        The final set of waveforms. Notice that the second set of waveforms has a similar shape to the first set, while still keeping its musical properties (in this case, pitch). Perhaps a real song sample would show the results better - perhaps I will update the article with some public domain songs.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</p>
 
 <p>What I&rsquo;ve done is not even close to being perfect, but it doesn&rsquo;t really need to be. I feel it was
 a good introduction to a LISP dialect, and my friend was happy with the results.</p>
