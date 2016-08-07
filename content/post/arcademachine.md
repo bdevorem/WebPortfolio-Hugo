@@ -15,7 +15,7 @@ a fully working arcade machine of my very own - running a game I wrote on hardwa
 The project began at the end of grade school when I decided to try making my own fighting game.
 I got far enough, and ended with a simple game with three characters. I revisited the game
 at the end of high school when I decided to make it about my highschool robotics team,
-[The Fighting RoboVikings](www.robovikings.com). I got a few of the team members to design
+[The Fighting RoboVikings](http://www.robovikings.com). I got a few of the team members to design
 characters, and I started adding them to the game. (It quickly became an arms race to make
 the most unfair character, but that didn't bother me.)
 
