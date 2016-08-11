@@ -45,7 +45,7 @@ I installed the arcade components.
 >}}
 
 {{< figure src="tryingitout.png" 
-	   caption="I was eager to test it. The first game played? X-Men, because who can say no to the Master of Magnet."
+	   caption="I was eager to test it. The first game played? X-Men, because who can say no to the Master of Magnet?"
 >}}
 
 Once everything worked, I took an old Compaq CRT monitor and my control panel and took some measurements. Using those,
