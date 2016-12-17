@@ -3,7 +3,6 @@ website:
 	rm ./public/post/adlib/index.html
 	cp ./content/post/adlib.php ./public/post/adlib/index.php
 deploy:
-	[ `hostname` != 'johnbot.me' ] && ./sftp_dir.sh ; true
 	git add *
 	git commit
 	git push

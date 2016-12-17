@@ -92,4 +92,7 @@ helper script - instead I merely copied the configuration from one of their
 prebuilt images. I wish I had shell scripted this process - in the future I
 may do so, as well as update the other scripts to be a bit less horrible.
 
+To actually draw to the screen, I made myself a member of the tty group:
+```sudo usermod -a -G tty pi```
+
 TODO INSERT PICTURE.
