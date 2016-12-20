@@ -7,14 +7,9 @@ title = "About Me"
 
 My name is John Westhoff.  
 Friends call me **Jeffrey** for short (college nickname).  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;
 Or **JohnathonNow** (high school nickname).  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;
 Or **Johnbot** (childhood nickname).  
 
-___
 
 Anyway, this is my blog of sorts. It primarily serves two purposes:  
     1. To help me get practice with writing and sharing my work.
