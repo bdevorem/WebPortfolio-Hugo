@@ -10,6 +10,12 @@ Friends call me **Jeffrey** for short (college nickname).
 Or **JohnathonNow** (high school nickname).  
 Or **Johnbot** (childhood nickname).  
 
+I am a Junior Computer Science major at the University of Notre Dame.
+I live in Stanford Hall, and I really enjoy working on side projects.
+I currently serve as the mascot for the 
+[Notre Dame Linux Users Group](http://ndlug.herokuapp.com/), and they're
+the ones who started calling me Jeffrey.
+
 
 Anyway, this is my blog of sorts. It primarily serves two purposes:  
     1. To help me get practice with writing and sharing my work.
