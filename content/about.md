@@ -14,6 +14,8 @@ Or **JohnathonNow** (high school nickname).
 &nbsp;&nbsp;&nbsp;
 Or **Johnbot** (childhood nickname).  
 
+___
+
 Anyway, this is my blog of sorts. It primarily serves two purposes:  
     1. To help me get practice with writing and sharing my work.
 Communication is a key feature of the human race, and there is a clear
