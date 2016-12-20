@@ -11,7 +11,8 @@ Or **JohnathonNow** (high school nickname).
 Or **Johnbot** (childhood nickname).  
 
 I am a Junior Computer Science major at the University of Notre Dame.
-I live in Stanford Hall, and I really enjoy working on side projects.
+I live in [Stanford Hall](http://www3.nd.edu/~stanford/),
+and I really enjoy working on side projects.
 I currently serve as the mascot for the 
 [Notre Dame Linux Users Group](http://ndlug.herokuapp.com/), and they're
 the ones who started calling me Jeffrey.
