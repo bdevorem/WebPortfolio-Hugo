@@ -16,11 +16,11 @@ I wanted to be able to add content here without having to SSH into
 my server, `cd`-ing into the www directory, `git pull`ing, and `make`ing,
 as those steps are tedious. So, I set up a GitHub webhook to POST to a PHP
 page on the server. The basic form of this PHP page is just:  
-{{< highlight php >}}
+```
 <?php
     passthru("MYSCRIPT.sh");
 ?>
-{{< /highlight >}}  
+```  
 Where `MYSCRIPT.sh` is just a script that pulls and makes the site.  
 Now, GitHub also allows you to set a secret, which allows you to
 secure the page against malicious actors. For this application, I
