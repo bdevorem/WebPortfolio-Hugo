@@ -1,6 +1,6 @@
 baseurl = "https://www.johnbot.me"
 languageCode = "en-us"
-title = "Project Block of John Westhoff"
+title = "Project Blog of John Westhoff"
 [params]
     github = "http://github.com/johnathonnow"
     linkedin = "https://www.linkedin.com/in/johnjwesthoff"
