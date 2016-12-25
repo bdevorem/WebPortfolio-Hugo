@@ -1,4 +1,4 @@
-baseurl = "https://www.johnbot.me"
+baseurl = "https://johnwesthoff.com"
 languageCode = "en-us"
 title = "Project Blog of John Westhoff"
 [params]
@@ -6,7 +6,6 @@ title = "Project Blog of John Westhoff"
     linkedin = "https://www.linkedin.com/in/johnjwesthoff"
     name = "John Westhoff"
     avatar = "../../img/avatar.jpg"
-    bio = "See [my about page](https://www.johnbot.me/about)."
     visible = ""
 [taxonomies]
 tag = "tags"
