@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+<section id="content" role="main">
+  <h1 class="post-title">Tagged with {{ .Title }}</h1>
+  {{ range .Data.Pages }}
+  {{ .Render "li" }}
+  {{ end }}
+  {{ partial "pagination.html" .Paginator }}
+</section>
+{{ partial "footer.html" . }}
+

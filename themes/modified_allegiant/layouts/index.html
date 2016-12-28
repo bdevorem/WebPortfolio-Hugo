@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+<section id="content" role="main">
+  {{ range $index, $page := .Paginator.Pages}}
+      {{ if ne $index 0 }}
+      {{ end }}
+      {{ if not ((isset .Params "visible")) }}
+          {{ .Render "li" }}
+      {{ end }}
+  {{ end }}
+  {{ partial "pagination.html" .Paginator }}
+</section>
+{{ partial "footer.html" . }}
+
