@@ -2,8 +2,9 @@
   <h2 class="post-title"><a href="{{ .Permalink }}" rel="bookmark" title="Link to {{ .Title }}">{{ .Title }}</a></h2>
   <span class="post-date">Written {{ .Date.Format "Jan 2, 2006" }}</span>
   -
-  <span class="post-type"> 
-      {{ singularize (.Param "heading") }}
+  <a class="post-type" href="{{.Site.BaseURL}}/{{.Section}}">
+          {{ singularize (.Param "heading") }}
+  </a>
   </span>
   <p>{{ .Summary }}</p>
   {{ if .Truncated }}<a class="moretag" href="{{ .Permalink }}">Continue reading &#8614;</a>{{ end }}
