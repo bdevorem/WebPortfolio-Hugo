@@ -7,6 +7,7 @@ title = "Project Blog of John Westhoff"
     name = "John Westhoff"
     avatar = "../../img/avatar.jpg"
     visible = ""
+    heading = "Projects"
 [taxonomies]
 tag = "tags"
 category = "categories"

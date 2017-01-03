@@ -1,6 +1,9 @@
 {{ partial "header.html" . }}
 <section id="content" role="main">
-  <h1 class="post-title">Tagged with {{ .Title }}</h1>
+  <h1 class="headering">
+      {{ if in (first 2 (split .URL "/")) "tags" }}Tagged with {{ end }}
+      {{ .Title }}
+  </h1>
   {{ range .Data.Pages }}
   {{ .Render "li" }}
   {{ end }}

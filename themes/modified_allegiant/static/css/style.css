@@ -242,10 +242,19 @@ hr {
     margin-top: 3.125rem;
     margin-bottom: 3.125rem
 }
+.headering {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
 .post-title {
-    margin-top: 80px
+    margin-bottom: 0px;
+    margin-top: 35px
 }
 .post-date {
+    color: #7A7B7C;
+    font-size: .778em
+}
+.post-type {
     color: #7A7B7C;
     font-size: .778em
 }
@@ -260,11 +269,20 @@ a.moretag:visited {
 a.moretag:hover {
     text-decoration: underline
 }
+code {
+    font-family: monospace;
+    padding: .1em .1em;
+    font-size: inherit;
+    border-radius: 1px;
+    background-color: #e5e5e5;
+    color: #c7254e;
+    white-space: pre-wrap;
+}
 .smallcode {
     font-family: monospace;
-    padding: .25em .5em;
+    padding: .1em .1em;
     font-size: inherit;
-    border-radius: 3px;
+    border-radius: 1px;
     background-color: #e5e5e5;
     white-space: nowrap;
     color: #c7254e
@@ -360,7 +378,7 @@ footer .menu-item a:hover {
     margin-bottom: 60px
 }
 .divider {
-    margin-bottom: -30px;
+    margin-bottom: 0px;
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, 0))
@@ -648,6 +666,8 @@ tr td:hover {
 .hljs {
     display: block;
     padding: .5em;
+    margin-top: -1em;
+    margin-bottom: -1em;
     background: #23241f
 }
 .css .hljs-function .hljs-preprocessor,
@@ -739,7 +759,7 @@ tr td:hover {
 .smalltalk .hljs-localvars,
 .sql .hljs-aggregate,
 .tex .hljs-command {
-    color: #e6db74
+    color: #2266ff
 }
 .apache .hljs-sqbracket,
 .hljs-comment,

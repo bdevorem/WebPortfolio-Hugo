@@ -47,7 +47,13 @@
         <div class="clearfix"></div>
       </section>
       <div class="post-heading">
-        <h1>{{ if and ($.IsNode) (eq $.Section "") }} Posts {{ else }}
+          <h1>{{ if and ($.IsNode) (eq $.Section "") }}
+                {{ if .IsHome }}
+                  Home
+                {{ else }}
+                  {{ title (index .Data.Pages 0).Section }}
+                {{ end }}
+            {{ else }}
         {{ .Title }}
           <div class="share-icons-header">
             <a href="http://www.twitter.com/share?url={{ .Permalink }}" target="_blank">
