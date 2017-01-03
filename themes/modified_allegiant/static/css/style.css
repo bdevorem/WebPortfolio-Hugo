@@ -254,7 +254,7 @@ hr {
     color: #7A7B7C;
     font-size: .778em
 }
-.post-type {
+a.post-type {
     color: #7A7B7C;
     text-decoration:none;
     font-size: .778em
