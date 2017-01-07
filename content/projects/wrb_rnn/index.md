@@ -9,7 +9,8 @@ series = [ "For Fun" ]
 
 For fun, I decided Wolfrat Bot needed a bit more, err, personality.
 So, I set off to make him one. After training an RNN for a few hours
-on my desktop's GPU, blah blah blah
+on my desktop's GPU, I had interesting results but ultimately failed
+at achieving quite what I wanted.
 
 Anyway, I encountered some huge hurdles
 I found out AFTER training for ~8 hours that the way I was encoding
@@ -49,3 +50,6 @@ RNN: https://twitter.com/NDLibraries/status/721324222115053512166284272434243135
 OK, that last one is the interesting - up until 'status' that link
 is perfectly valid. Regardless, it doesn't seem to care what was said
 previously - it just says whatever it feels like.
+It is clear that a different approach might be necessary for achieving
+good results - a character level RNN might be insufficient for generating
+relevant conversation.
