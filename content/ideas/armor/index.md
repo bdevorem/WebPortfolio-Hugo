@@ -16,7 +16,7 @@ foam with conductive glue. Conductive foam has the property that when it is
 compressed its depth-wise resistance decreases. Thus, when the sandwich
 is struck, the change in resistance should be measureable across the two wires.
 
-![Armor](../imgs/armor-diagram.png)
+![Armor](imgs/armor-diagram.png)
 
 By using these wires in a voltage divider, an analog to digital converter
 connected to a microcontroller should be able to detect when the sheets are

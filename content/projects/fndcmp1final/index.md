@@ -20,7 +20,7 @@ to prevent myself from essentially making it a complete language of
 its own.
 
 The game itself is _really_ hard. Below is a screenshot from the third level:  
-![png](../bhfil.png)
+![png](bhfil.png)
 
 The source is available on my [github](https://github.com/JohnathonNow/fndcmpifinal).
 

@@ -34,7 +34,7 @@ again and compiled it without change (other than the program name, of couse).
 Well, wouldn't you know it, it gave the same error! Was the original code
 faulty? That seemed unlikely.  
 	
-{{< figure src="../maybeimthefool.png" 
+{{< figure src="maybeimthefool.png" 
 	   caption="I'm certain this system is out to get me."
 >}}
 

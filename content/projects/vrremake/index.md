@@ -37,7 +37,7 @@ for any one component to affect its holder (for instance, a thruster
 adds impulse to its holder) and for any holder to affect its components (for
 example, a blown up hull might destroy all of its components).
 
-{{< figure src="../bam.png" 
+{{< figure src="bam.png" 
 	   caption="The game looks pretty, if I do say so myself."
 >}}
 

@@ -40,5 +40,5 @@ nx.draw_networkx(g,ax=ax)
 ```
 
 
-![png](../output_2_0.png)
+![png](output_2_0.png)
 
