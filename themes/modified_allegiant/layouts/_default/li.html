@@ -3,7 +3,7 @@
   <span class="post-date">Written {{ .Date.Format "Jan 2, 2006" }}</span>
   -
   <a class="post-type" href="{{.Site.BaseURL}}/{{.Section}}">
-          {{ singularize (.Param "heading") }}
+          {{ .Param "heading" }}
   </a>
   </span>
   <p>{{ .Summary }}</p>
