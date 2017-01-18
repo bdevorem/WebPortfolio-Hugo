@@ -294,7 +294,8 @@ code {
     font-family: Lato, Avenir, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
 }
 article p {
-    color: inherit
+    color: inherit;
+    margin-bottom: 1.5em;
 }
 #content {
     width: 700px;
