@@ -465,7 +465,14 @@ figure strong {
 
 figure figcaption {
     border: 1px dotted blue;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
     text-align: center;
+}
+
+figure figcaption p{
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
 }
 
 figure img {
