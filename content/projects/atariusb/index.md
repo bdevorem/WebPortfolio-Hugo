@@ -1,7 +1,7 @@
 +++
 date = "2017-02-02T23:24:00-04:00"
 draft = false
-title = "Reliving the Arari 2600"
+title = "Reliving the Atari 2600"
 tags = [ "Video Games", "Atari 2600", "Atari", "School" ]
 categories = [ "For Fun" ]
 series = [ "School" ]
