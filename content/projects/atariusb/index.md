@@ -55,7 +55,7 @@ void loop() {
 ```
 
 The project was definitely successful - I played a few rounds of 
-[one of my all time favorites](https://en.wikipedia.org/wiki/Warlords_(1980_video_game))
+[one of my all time favorites](https://en.wikipedia.org/wiki/Warlords_(1980_video_game) )
 with [Breezy](http://bashfulbytes.com/pages/about.html). 
 We played eight rounds and ended up tying 4-4 before watching our classmates
 fail at [trying to run a lemonade stand](https://en.wikipedia.org/wiki/Lemonade_Stand). 
