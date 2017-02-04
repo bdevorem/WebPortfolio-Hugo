@@ -7,8 +7,7 @@ categories = [ "For Fun" ]
 series = [ "School" ]
 +++
 I am currently taking a course titled "Hackers in the Bazaar", which is,
-by all accounts, a joke course that exists solely because the department
-wouldn't let some professor teach the course he wanted to. Anyway,
+by all acounts, the greatest class ever. Anyway,
 we spent class today playing classic video games brought in by students.
 I brought in a [SNES](https://en.wikipedia.org/wiki/SNES) and
 a copy of [Mortal Kombat](https://en.wikipedia.org/wiki/Mortal_Kombat_(1992_video_game)).
