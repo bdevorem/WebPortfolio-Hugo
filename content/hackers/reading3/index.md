@@ -1,5 +1,5 @@
 +++
-date = "2017-02-03T23:24:00-05:00"
+date = "2017-02-16T23:24:00-05:00"
 draft = false
 title = "Nerds as Hackers"
 heading = "Hackers"
