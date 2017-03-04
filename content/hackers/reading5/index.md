@@ -154,7 +154,7 @@ reasonably hope to cut for yourself is shrinking.
 **Desktop?** What a weird way to ask that. Does that exclude laptops? Or
 are those mobile? Did I misunderstand the categories? Desktops are
 the go to for high power requirements. Some would argue the cloud is replacing
-that, but that's expensive and [hokey](https://www.youtube.com/v/0ghGWWfzq-o&start=673&end=678&version=3&autoplay=1).
+that, but that's expensive and [hokey](https://www.youtube.com/v/0ghGWWfzq-o&start=673&end=676&version=3&autoplay=1).
 Video games belong here, and here they shall remain.
 
 **Something else?** I can see multiplatform becoming bigger. Also [this book I was forced to read freshman year of high school](https://en.wikipedia.org/wiki/Feed_(Anderson_novel))
