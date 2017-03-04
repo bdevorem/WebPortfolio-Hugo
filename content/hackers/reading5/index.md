@@ -72,7 +72,8 @@ I mean, I know he says "often", but his whole tone tells me he really
 thinks "I can think of one or two exceptions" and not "this is true 50.01%
 of the time." PG has the attitude that people can just be more productive.
 He cites people arguing about whether or not the world was round,
-but shows that he doesn't understand philosphy by stating how Eratosthenes
+but shows that he doesn't understand philosphy [despite having
+a BA in it] by stating how Eratosthenes
 was off by 2% when he used the shadow lengths of cities to estimate the
 circumference of earth. This is a circular argument - to approximate
 the earth's circumference, you have to assume that it is a sphere, and so you
