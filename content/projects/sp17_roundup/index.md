@@ -86,6 +86,8 @@ in JavaScript, Node.js, and MongoDB. I might just add in AngularJS and get
 really [MEAN](http://mean.io/). In the past I've done some 
 [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) stuff, but
 learning some more modern stacks could do me some good.
+Both of these projects are being hosted in a repo I have set up for this blog,
+which can be found [here](https://github.com/JohnathonNow/johnwesthoff-blogwork).
 
 I also have what I feel is a very good idea in the works - a tool meant to teach
 principles of robotics, AI, and programming in the browser. It would
