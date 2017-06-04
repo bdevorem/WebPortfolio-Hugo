@@ -5,6 +5,6 @@
 </head>
 <div id="editor">(+ 1 1)</div>
 <script src="https://johnwesthoff.com/js/ace.js"></script>
-<script> var editor = ace.edit("editor"); editor.setTheme("ace/theme/chrome"); editor.setAutoScrollEditorIntoView(true); editor.setOption("maxLines", 30); editor.getSession().setMode("ace/mode/lisp"); function run() { var e = eval(parse(editor.getValue())); $("#tb").html("Result: "+stringify(e)); } </script>
+    <script> var editor = ace.edit("editor"); editor.setTheme("ace/theme/chrome"); editor.setAutoScrollEditorIntoView(true); editor.setOption("maxLines", 30); editor.getSession().setMode("ace/mode/lisp"); function run() { var e = eval(parse(editor.getValue())); $("#tb").html("Result: <code>"+stringify(e)+"</code>"); } </script>
 <button id="but" onclick="run()">Run</button>
 <div id="tb">Result: </div>
