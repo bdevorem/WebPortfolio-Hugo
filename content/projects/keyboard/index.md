@@ -22,7 +22,7 @@ It has 5v power, ground, data, and clock, which isn't suprising at all.
 
 I hooked up an MSP430 launchpad to it, giving the keyboard 5v power directly.
 Since the inputs to the MSP430 aren't 5v tolerant, and I only planned
-on reading from the keyboard, I just through two voltage dividers on
+on reading from the keyboard, I just threw two voltage dividers on
 for the data and clock before hooking them up to two inputs on the launchpad.
 I wrote some quick code to poll the clock line and whenever it went high I had
 the launchpad send the value of the data line over serial. 
@@ -58,7 +58,8 @@ signal initially. Still Nothing. Maybe, I thought, the converter doesn't
 do anything if there is no load. So I put a resistor across the power pins
 from the converter. Still nothing! 
 
-Maybe the host is expecting some sort of response from the keyboard.
+Maybe the host is expecting some sort of response from the keyboard that it
+isn't providing.
 So, I hooked up an Adafruit Trinket in parallel to the PS/2 to USB converter
 to read the signals on the line.
 I also hooked up a multimeter to the CLK line. I noticed something - 
@@ -70,4 +71,4 @@ is held at 5 volts. So, I ordered a level shifter and decided to try
 it out. Unfortunately, I could not get it to work and then the semester ended,
 so I'll have to try again in the fall.
 
-
+To be continued... (hopefully)
