@@ -47,7 +47,7 @@ The return value of `(x)` and the value of y in `(x y)` are in the range
 by adding or subtracting 360 until they are within the range.
  
 
-# Language Progress:
+# Language Progress
 
 I made a few language changes, outlined below:  
 
