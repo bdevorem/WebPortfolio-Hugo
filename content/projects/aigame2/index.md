@@ -1,5 +1,5 @@
 +++
-date = "2017-06-11T23:24:00-04:00"
+date = "2017-06-19T23:24:00-04:00"
 draft = false
 title = "AI Game Components"
 tags = [ "Projects" ]
@@ -7,7 +7,17 @@ categories = [ "For Fun" ]
 series = [ "AI Game" ]
 +++
 
+I've spent a few days now planning out more of my project. I worked on
+the language some more, and brainstormed ideas for blocks I would like to have
+in the program. I also decided to use [phaser](https://phaser.io/) as the
+game engine for the building and simulation of robots. This decision was
+based off the presence of a physics engine and the ability to specify
+constraints on sprites, which will take off the heavy lifting of
+"constructing" robots.
 # Parts
+Below is a list
+of some of my robot block ideas, as well as how they'd fit into the language
+I described in my last post:
 
  - **Structure** - a 1x1 piece with mass that does not add functionality
  - **Wheel** - a 1x1 piece with mass that exerts a force in one of two
@@ -32,12 +42,44 @@ beam will travel up to 90 blocks. It is similar to the **IR TOF** in other
 regards.
  - **SERVO** - a 1x1 piece that rotates. It is runnable in two ways. `(x)` 
 returns its current rotation in degrees. `(x y)` sets its angle to y degrees.
-The retun value of `(x)` and the value of y in `(x y)` are in the range 
+The return value of `(x)` and the value of y in `(x y)` are in the range 
 `[0, 360]`, and values outside this range will be changed to fit this range
 by adding or subtracting 360 until they are within the range.
  
-You can try out the language below:
+
+# Language Progress:
+
+I made a few language changes, outlined below:  
+
+ - `cons` now appends to the start of a list rather than the end, to be more in line with other LISPs.  
+ - `+` now properly handles string types.  
+ - `=` now properly handles each type.  
+ - `(type x)` has been added, and returns a string describing the type of an expression.  
+ - `(isdef? x)` has been added, and returns a boolean if identifier x has been defined.  
+ - `(| x...)` has been added, and returns the first true value, or the last false value if no value is true.  
+ - `(& x...)` has been added, and returns the first false value, or the last true value if no value is false.  
+ - `(* x...)` has been added, and returns the product of the arguments.  
+ - `(/ x...)` has been added, and returns the result of dividing the first argument by each of the subsequent arguments. I.e. It is equal to the first argument divided by the product of the remaining arguments.  
+ - `(scar x)` has been added, and returns the first character of a string.  
+ - `(scdr x)` has been added, and returns the string x with the first character removed.  
+ - `g` has been renamed to `def` and `def` has been renamed to `let`... sorry...   
+ - Spaces can now come between the closing paren of a function call and the function's last argument.  
+ - Newlines now count as spaces.  
+ - Comments have been added, and begin with a `;` and continue to the end of the line.  
+ - Multiline programs are now supported, and return the result of the last expression (the same as wrapping the whole program inside of a `(do ...)`). (OK, I just wrapped every program inside of `(do ...)`...)
+
+# Language Errata
+I played around a little and found that the below expression causes bad behavior:
 
 {{< editor >}}
-
-Type your code and hit `Run` to see the result.
+;;;; An example to show that closures don't quite work
+;;;; also shows off embedding preset code a little
+(def _cons                                   ;define our own cons function
+  (fun '(_car _cdr)                          ;it takes in the first and rest
+    (fun '(which) (if which _car _cdr)       ;and makes a closure
+)))
+(def list (_cons 0 (_cons 1 (_cons 2 nil)))) ;make a list using this
+((list #f) #t)                               ;retrieve the second element
+                                             ;this is expected to be 1
+;;cry because the result is wrong (we get 0 instead of 1)
+{{< /editor >}}

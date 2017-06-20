@@ -12,15 +12,20 @@ function isNonSpace(c) {
 }
 
 function parse(code) {
-    code = "(do " + code + ")";
+    code = "(do " + code.trim() + ")";
     function _parse() {
         code = code.trimLeft();
         c = code[0];
         code = code.slice(1);
-        if (c === "(") {
+        if (code.length == 0) {
+            return null;
+        } else if (c === "(") {
             var toRet = new Node("function", "function");
             while (code[0] !== ")" && code[0]) {
-                toRet.children.push(_parse());
+                var n = _parse();
+                if (n) {
+                    toRet.children.push(n);
+                }
             }
             code = code.slice(1);
             return toRet;
@@ -41,7 +46,10 @@ function parse(code) {
             var toRet = new Node("list", "");
             code = code.slice(1);
             while (code[0] !== ")" && code[0]) {
-                toRet.children.push(_parse());
+                var n = _parse();
+                if (n) {
+                    toRet.children.push(n);
+                }
             }
             code = code.slice(1);
             return toRet;
@@ -64,6 +72,15 @@ function parse(code) {
             }
             code = code.slice(1);
             return new Node("string", str);
+        } else if (c === ")") {
+            code = ")" + code;
+            return null;  
+        } else if (c === ";") {
+            while (code[0] !== "\n" && code[0]) {
+                code = code.slice(1);
+            }
+            code = code.slice(1);
+            return _parse();
         } else {
             var id = c;
             while (isNonSpace(code[0]) && code[0] !== ")" && code[0]) {
@@ -78,10 +95,10 @@ function parse(code) {
     return _parse();
 }
 
-var globals = {};
+var globals = {"nil": new Node("list","")};
 
 function eval(root) {
-    var stack = [globals];
+    var stack = [globals, {}];
     function _eval(n) {
     switch (n.type) {
         case "string":
@@ -110,11 +127,12 @@ function eval(root) {
             case "fun":
                 _eval(n.children[1]);
                 n.eval = new Node("code", "");
-                n.eval.context = stack[stack.length - 1];
+                n.eval.context = stack.slice()[stack.length - 1];
+                console.log(stack);
                 n.eval.children = n.children.slice(1);
                 n.eval.eval = n.eval;
             break;
-            case "def":
+            case "let":
                 var pairs = _eval(n.children[1]).eval.children;
                 for (var i = 1; i < pairs.length; i+=2) {
                     _eval(pairs[i]);
@@ -127,10 +145,31 @@ function eval(root) {
                 n.eval = _eval(n.children[2]).eval;
                 stack.pop();
             break;
-            case "g":
+            case "isdef?":
+                n.eval = new Node("boolean", false);
+                for (var i = stack.length - 1; i >= 0; i--) {
+                    if (n.children[1].value in stack[i]) {
+                        n.eval.value = true;
+                        break;
+                    }
+                }
+            break;
+            case "def":
                 for (var i = 1; i < n.children.length; i+=2) {
                     globals[n.children[i].value] = 
                             _eval(n.children[i+1]).eval;
+                }
+            break;
+            case "|":
+                for (var i = 1; i < n.children.length; i++) {
+                    n.eval = _eval(n.children[i]).eval;
+                    if (n.eval.value && n.eval.type === "boolean") break;
+                }
+            break;
+            case "&":
+                for (var i = 1; i < n.children.length; i++) {
+                    n.eval = _eval(n.children[i]).eval;
+                    if (!n.eval.value && n.eval.type === "boolean") break;
                 }
             break;
             case "-":
@@ -139,6 +178,20 @@ function eval(root) {
                     n.eval -= _eval(n.children[i]).eval.value;
                 }
                 n.eval = new Node("float", n.eval);
+            break;
+            case "/":
+                n.eval = _eval(n.children[1]).eval.value;
+                for (var i = 2; i < n.children.length; i++) {
+                    n.eval /= _eval(n.children[i]).eval.value;
+                }
+                n.eval = new Node(n.children[1].type, n.eval);
+            break;
+            case "*":
+                n.eval = _eval(n.children[1]).eval.value;
+                for (var i = 2; i < n.children.length; i++) {
+                    n.eval *= _eval(n.children[i]).eval.value;
+                }
+                n.eval = new Node(n.children[1].type, n.eval);
             break;
             case "+":
                 n.eval = _eval(n.children[1]).eval.value;
@@ -151,17 +204,16 @@ function eval(root) {
                 n.eval = new Node("boolean", 
                     _eval(n.children[2]).eval.value === 
                     _eval(n.children[1]).eval.value);
-                if (n.children[1].type === "list" &&
-                    n.children[2].type === "list") {
+                if (n.children[1].eval.type === "list" &&
+                    n.children[2].eval.type === "list") {
                     n.eval.value = true;
-                    if (n.children[1].children.length != 
-                        n.children[2].children.length) {
+                    if (n.children[1].eval.children.length != 
+                        n.children[2].eval.children.length) {
                         n.eval.value = false;
                     } else {
-                        console.log(n.children[1].children.length);
-                        for (var i=n.children[1].children.length;i--;) {
-                            if (n.children[1].children[i].eval.value !==
-                                n.children[2].children[i].eval.value) {
+                        for (var i=n.children[1].eval.children.length;i--;) {
+                            if (n.children[1].eval.children[i].eval.value !==
+                                n.children[2].eval.children[i].eval.value) {
                                 n.eval.value = false; break;
                             }
                         }
@@ -203,11 +255,13 @@ function eval(root) {
                 n.eval.eval = n.eval;
             break;
             case "cons":
+                n.eval = new Node("list", "");
                 var b = _eval(n.children[n.children.length - 1]).eval;
+                n.eval.children = b.children.slice(); //copy array
                 for (var i = n.children.length-1;i-- - 1;) {
-                    b.children.unshift(_eval(n.children[i]).eval);
+                    n.eval.children.unshift(_eval(n.children[i]).eval);
                 }
-                n.eval = b;
+                n.eval.eval = n.eval;
             break;
             default:
                 for (var i = stack.length - 1; i >= 0; i--) {
@@ -217,6 +271,7 @@ function eval(root) {
                     }
                 }
             case "":
+                n.eval = _eval(n.children[0]).eval;
                 var vars = _eval(n.children[0].children[0]).eval;
                 var vals = n.children.slice(1);
                 var frame = {};
@@ -224,21 +279,26 @@ function eval(root) {
                     frame[vars.children[i].value] = _eval(vals[i]).eval;
                 }
                 stack.push(frame);
+                stack.push(n.children[0].context);
                 n.eval = _eval(n.children[0].children[1]).eval;
                 stack.pop();
             break;
             }} else {
                 n.eval = _eval(n.children[0]).eval;
-                var vars = _eval(n.eval.children[0]).eval;
-                var vals = n.children.slice(1);
-                var frame = n.eval.context;
-                console.log(frame);
-                for (var i = 0; i < vals.length; i += 1) {
-                    frame[vars.children[i].value] = _eval(vals[i]).eval;
+                if (n.children[0].type === "code" ||
+                    n.children[0].type === "function") {
+                    console.log(n);
+                    var vars = _eval(n.eval.children[0]).eval;
+                    var vals = n.children.slice(1);
+                    var frame = n.eval.context;
+                    console.log(frame);
+                    for (var i = 0; i < vals.length; i += 1) {
+                        frame[vars.children[i].value] = _eval(vals[i]).eval;
+                    }
+                    stack.push(frame);
+                    n.eval = _eval(n.eval.children[1]).eval;
+                    stack.pop();
                 }
-                stack.push(frame);
-                n.eval = _eval(n.eval.children[1]).eval;
-                stack.pop();
             }
         return n;
     }
