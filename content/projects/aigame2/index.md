@@ -83,3 +83,13 @@ I played around a little and found that the below expression causes bad behavior
                                              ;this is expected to be 1
 ;;cry because the result is wrong (we get 0 instead of 1)
 {{< /editor >}}
+
+This appears to be caused by issues of storing context information.
+Ideally, when the `\_cons` function gets called, it would return a function
+that has access to the `\_car` and `\_cdr` values. However, it appears
+that it gets stuck with the `\_car` and `\_cdr` values from the first time
+`\_cons` is called.
+
+In terms of the language this is the issue I will spend the most time on at the moment.
+Next to that, having proper error messages and the like is a priority,
+followed by some more minor details.
