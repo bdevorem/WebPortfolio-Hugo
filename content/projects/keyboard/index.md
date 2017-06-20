@@ -9,7 +9,7 @@ series = [ "IBM" ]
 For the past five months, I've had an old [IBM Model M](https://en.wikipedia.org/wiki/Model_M_keyboard)
 sitting on my desk. Specifically, a 1390572, a 122-key monstrosity. Ever
 since [spending the summer typing on one of these old keyboards](https://johnwesthoff.com/projects/rpgii/)
-I have wanted to get this one working, because it is very loud and very fun
+I have wanted to get this keyboard working, because it is very loud and very fun
 to type on. 
 
 I found a converter for about $40 online, but that doesn't seem worth it
