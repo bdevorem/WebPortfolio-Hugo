@@ -12,8 +12,8 @@ since [spending the summer typing on one of these old keyboards](https://johnwes
 I have wanted to get this keyboard working, because it is very loud and very fun
 to type on. 
 
-I found a converter for about $40 online, but that doesn't seem worth it
-at all. It has this weird DIN-5 connector, where the pins sweep 240 degrees;
+I found a converter for about $40 online, but that doesn't seem worth it.
+The keyboard has this weird DIN-5 connector, where the pins sweep 240 degrees;
 I've never seen any connector quite like it. It looks a bit like a 
 PS/2 connector, but with a pin missing, and it's a lot bigger.
 Anyway, I found a mating connector and soldered some wires to it.
