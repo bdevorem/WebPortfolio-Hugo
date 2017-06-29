@@ -129,13 +129,20 @@ var gFunMap = {
 
 function eval(root) {
     var context = new Context();
-    return _eval(context, root);
+    try {
+        var result = _eval(context, root);
+    } catch(err) {
+        return new Node('error', "ERR: Could not evaluate!");
+    }
+    if (context.stack.length != 2) {
+        return new Node('error', "ERR: Stack Leak!");
+    }
+    return result;
 }
 
 function _eval(c, n) {
     if (c.stack.length > MAX_STACK) {
-        console.log("STACK OVERFLOW!");
-        return null;
+        return new Node('error', "ERR: Stack Overflow!");
     }
     switch (n.type) {
         case "string":
@@ -191,13 +198,20 @@ function _call(c, n) {
     //    n.children[0].type === "function") {
         var vars = _eval(c, n.eval.children[0]).eval;
         var vals = n.children.slice(1);
-        var frame = n.eval.context;
+        var frame = {};
+        var r = n.eval;
 
         setCallVars(c, frame, vars, vals);
 
         c.stack.push(frame);
+        if (r.context) {
+            c.stack.push(r.context);
+        }
         n.eval = _eval(c, n.eval.children[1]).eval;
         c.stack.pop();
+        if (r.context) {
+            c.stack.pop();
+        }
     //}
 }
 function _named(c, n) {
@@ -217,13 +231,19 @@ function _user(c, n, r) {
     n.eval = _eval(c, r).eval;
     var vars = _eval(c, r.children[0]).eval;
     var vals = n.children.slice(1);
-    var frame = r.context || {};
+    var frame = {};
 
     setCallVars(c, frame, vars, vals);
 
     c.stack.push(frame);
+    if (r.context) {
+        c.stack.push(r.context);
+    }
     n.eval = _eval(c, r.children[1]).eval;
     c.stack.pop();
+    if (r.context) {
+        c.stack.pop();
+    }
 }
 function _fun(c, n) {
     _eval(c, n.children[1]);
