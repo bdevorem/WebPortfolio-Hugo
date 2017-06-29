@@ -85,10 +85,10 @@ I played around a little and found that the below expression causes bad behavior
 {{< /editor >}}
 
 This appears to be caused by issues of storing context information.
-Ideally, when the `\_cons` function gets called, it would return a function
-that has access to the `\_car` and `\_cdr` values. However, it appears
-that it gets stuck with the `\_car` and `\_cdr` values from the first time
-`\_cons` is called.
+Ideally, when the `_cons` function gets called, it would return a function
+that has access to the `_car` and `_cdr` values. However, it appears
+that it gets stuck with the `_car` and `_cdr` values from the first time
+`_cons` is called.
 
 In terms of the language this is the issue I will spend the most time on at the moment.
 Next to that, having proper error messages and the like is a priority,

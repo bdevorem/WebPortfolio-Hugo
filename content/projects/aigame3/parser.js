@@ -1,3 +1,4 @@
+//VERSION 3
 const MAX_STACK = 40;
 
 class Node {
