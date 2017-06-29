@@ -217,12 +217,11 @@ function _user(c, n, r) {
     n.eval = _eval(c, r).eval;
     var vars = _eval(c, r.children[0]).eval;
     var vals = n.children.slice(1);
-    var frame = {};
+    var frame = r.context || {};
 
     setCallVars(c, frame, vars, vals);
 
     c.stack.push(frame);
-    c.stack.push(r.context);
     n.eval = _eval(c, r.children[1]).eval;
     c.stack.pop();
 }
