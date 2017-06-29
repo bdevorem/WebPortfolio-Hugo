@@ -1,3 +1,5 @@
+const MAX_STACK = 40;
+
 class Node {
     constructor(type, value) {
         this.type = type;
@@ -121,7 +123,8 @@ var gFunMap = {
     "&"      : _and,
     "fun"    : _fun,
     "="      : _equals,
-    "let"    : _let
+    "let"    : _let,
+    "d"      : function(c, n){console.log(_eval(c, n.children[1]).eval);}
 };
 
 function eval(root) {
@@ -130,6 +133,10 @@ function eval(root) {
 }
 
 function _eval(c, n) {
+    if (c.stack.length > MAX_STACK) {
+        console.log("STACK OVERFLOW!");
+        return null;
+    }
     switch (n.type) {
         case "string":
         case "float":
@@ -180,8 +187,8 @@ function setCallVars(c, frame, vars, vals) {
 
 function _call(c, n) {
     n.eval = _eval(c, n.children[0]).eval;
-    if (n.children[0].type === "code" ||
-        n.children[0].type === "function") {
+    //if (n.children[0].type === "code" ||
+    //    n.children[0].type === "function") {
         var vars = _eval(c, n.eval.children[0]).eval;
         var vals = n.children.slice(1);
         var frame = n.eval.context;
@@ -191,28 +198,32 @@ function _call(c, n) {
         c.stack.push(frame);
         n.eval = _eval(c, n.eval.children[1]).eval;
         c.stack.pop();
-    }
+    //}
 }
 function _named(c, n) {
+    var fn = null;
     for (var i = c.stack.length - 1; i >= 0; i--) {
         if (n.children[0].value in c.stack[i]) {
-            n.children[0] = c.stack[i][n.children[0].value];
+            fn = c.stack[i][n.children[0].value];
             break;
         }
     }
-    _user(c, n);
+    _user(c, n, fn);
 }
-function _user(c, n) {
-    n.eval = _eval(c, n.children[0]).eval;
-    var vars = _eval(c, n.children[0].children[0]).eval;
+function _user(c, n, r) {
+    if (!r) {
+        r = n.children[0];
+    }
+    n.eval = _eval(c, r).eval;
+    var vars = _eval(c, r.children[0]).eval;
     var vals = n.children.slice(1);
     var frame = {};
 
     setCallVars(c, frame, vars, vals);
 
     c.stack.push(frame);
-    c.stack.push(n.children[0].context);
-    n.eval = _eval(c, n.children[0].children[1]).eval;
+    c.stack.push(r.context);
+    n.eval = _eval(c, r.children[1]).eval;
     c.stack.pop();
 }
 function _fun(c, n) {
