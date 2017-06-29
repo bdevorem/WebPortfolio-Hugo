@@ -1,10 +1,18 @@
+{{ if .Get 0 }}
 <script src="parser.js"></script>
+{{ end }}
 <script src="https://johnwesthoff.com/js/jquery.min.js"> </script>
 <head>
 <style type="text/css" media="screen"> #editor { top: 0; right: 0; bottom: 0; left: 0; } </style>
 </head>
-<div id="editor"> {{ if len .Inner | ne 0 }}{{ .Inner }}{{ else }}(+ 1 1){{ end }} </div>
+<div id="editor{{ .Get 0 }}"> {{ if len .Inner | ne 0 }}{{ .Inner }}{{ else }}(+ 1 1){{ end }} </div>
 <script src="https://johnwesthoff.com/js/ace.js"></script>
-    <script> var editor = ace.edit("editor"); editor.setTheme("ace/theme/chrome"); editor.setAutoScrollEditorIntoView(true); editor.setOption("maxLines", 30); editor.getSession().setMode("ace/mode/lisp"); function run() { var e = eval(parse(editor.getValue())); $("#tb").html("Result: <code>"+stringify(e)+"</code>"); } </script>
-<button id="but" onclick="run()">Run</button>
-<div id="tb">Result: </div>
+<script>
+var editor = ace.edit("editor{{ .Get 0 }}");
+editor.setTheme("ace/theme/chrome");
+editor.setAutoScrollEditorIntoView(true);
+editor.setOption("maxLines", 30);
+editor.getSession().setMode("ace/mode/lisp");
+</script>
+<button id="but" onclick="var e = eval(parse(ace.edit('editor{{ .Get 0 }}').getValue())); $('#tb{{ .Get 0 }}').html('Result: <code>'+stringify(e)+'</code>');">Run</button>
+<div id="tb{{ .Get 0 }}">Result: </div>
