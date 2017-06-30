@@ -118,6 +118,7 @@ var gFunMap = {
     "cons"   : _cons,
     "cdr"    : _cdr,
     "car"    : _car,
+    "type"   : _type,
     "scar"   : _scar,
     "scdr"   : _scdr,
     "|"      : _or,
@@ -223,6 +224,7 @@ function _named(c, n) {
             break;
         }
     }
+    console.log(fn);
     _user(c, n, fn);
 }
 function _user(c, n, r) {
