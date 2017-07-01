@@ -30,10 +30,16 @@ For simplicity at the moment, however, I
 have the robot represented as a list, with each piece getting an ID starting
 with the root at 1.
 
-I introduced a function that I have named `go` at the moment.
-`go` has two forms:  
- 1. `(go ID SPEED)` runs wheel with the ID ID at speed SPEED. SPEED is in the range `[-1, 1]` where `-1` is full reverse and `1` is full forward. *Forward* is the direction of the treads on the wheel sprite.  
- 2. `(go ID)` simply returns the current speed of the wheel identified by ID.
+I introduced a function that I have named `go`. As I had intended for the
+tree structure of the robot to mess with the programming by allowing users
+to "call" pieces of the robot as functions to control them, `go` is just a
+temporary solution until the game is more mature.
+
+`go` has two forms:   
+
+1. `(go ID SPEED)` runs wheel with the ID ID at speed SPEED. SPEED is in the range `[-1, 1]` where `-1` is full reverse and `1` is full forward. *Forward* is the direction of the treads on the wheel sprite.  
+2. `(go ID)` simply returns the current speed of the wheel identified by ID.  
+
 
 The biggest link between the editors that you might have seen in my previous
 posts and the game window you see below is that the game window will run
