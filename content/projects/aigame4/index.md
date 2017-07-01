@@ -22,31 +22,6 @@ is made up of blocks - nine of them to be exact.
 It has three structure pieces running
 down the middle, and three wheels on each side, two on each structure piece.
 
-The robot forms a bit of a tree, with the center structure piece as the root,
-two wheels and two structure pieces as children, and two wheels as children
-of each of the structure pieces. This tree-like structure is why I chose 
-a LISP for the language used to program the robots.
-For simplicity at the moment, however, I
-have the robot represented as a list, with each piece getting an ID starting
-with the root at 1.
-
-I introduced a function that I have named `go`. As I had intended for the
-tree structure of the robot to mess with the programming by allowing users
-to "call" pieces of the robot as functions to control them, `go` is just a
-temporary solution until the game is more mature.
-
-`go` has two forms:   
-
-1. `(go ID SPEED)` runs wheel with the ID ID at speed SPEED. SPEED is in the range `[-1, 1]` where `-1` is full reverse and `1` is full forward. *Forward* is the direction of the treads on the wheel sprite.  
-2. `(go ID)` simply returns the current speed of the wheel identified by ID.  
-
-
-The biggest link between the editors that you might have seen in my previous
-posts and the game window you see below is that the game window will run
-a user defined function called `run` every iteration of the game loop.
-This `run` function must be defined in global scope (i.e. using `def`),
-and it must take no arguments (i.e. it must be declared with something like
-`(def run (fun '() ...))`).
 
 In the little demo below, I have a very simply program set up to drive the
 robot in circles. To start it, press "Start Script". You can modify the program,
@@ -72,7 +47,35 @@ and click "Reload Script" whenever you want to.
 
 {{< game >}}
 <br> 
-My next steps are to make the wheels have an animation while moving (to make it
+The biggest link between the editors that you might have seen in my previous
+posts and the game window you saw above is that the game window will run
+a user defined function called `run` every iteration of the game loop.
+This `run` function must be defined in global scope (i.e. using `def`),
+and it must take no arguments (i.e. it must be declared with something like
+`(def run (fun '() ...))`).
+
+The robot forms a bit of a tree, with the center structure piece as the root,
+two wheels and two structure pieces as children, and two wheels as children
+of each of the structure pieces. This tree-like structure is why I chose 
+a LISP for the language used to program the robots.
+For simplicity at the moment, however, I
+have the robot represented as a list, with each piece getting an ID starting
+with the root at 1.
+
+To allow the code to control the robot, I introduced a function named `go`.
+As I had intended for the tree structure of the robot to mesh with 
+the programming by allowing users
+to "call" pieces of the robot as functions to control them, `go` is just a
+temporary solution until the game is more mature.
+
+`go` has two forms:  
+ 1. `(go ID SPEED)` runs wheel with the ID ID at speed SPEED. SPEED is in the range `[-1, 1]` where `-1` is full reverse and `1` is full forward. *Forward* is the direction of the treads on the wheel sprite.  
+ 2. `(go ID)` simply returns the current speed of the wheel identified by ID.  
+
+
+I still have a lot of work to do to make this project what I hope it can be.
+Right now my next steps are to make the wheels have an animation while moving (to make it
 more clear which wheels are spinning), to make it easier
 to control the robot from the language, and to make it easier to implement
 state machines within the language.
+Hopefully by the end of the summer I'll have an even cooler demo to show off!
