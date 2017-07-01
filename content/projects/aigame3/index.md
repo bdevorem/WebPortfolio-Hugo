@@ -7,6 +7,10 @@ categories = [ "For Fun" ]
 series = [ "AI Game" ]
 +++
 
+The language is coming along nicely. I refactored the evaluation function,
+moving out all of the function call logic into more digestible functions.
+This led to a few nice advances.
+<!--more-->
 
 # Bug Fixes
 
