@@ -17,11 +17,16 @@ the robots, just read on!
 
 Below you <s>will</s> should see an editor followed by a blue canvas with
 a weird centipede thing. Do not fear, for that is not a centipede, but
-is instead a six-wheel-drive robot. It has three structure pieces running
+is instead a six-wheel-drive robot. It has a very blocky appearance, as it
+is made up of blocks. It is made up of 9 blocks, to be more precise:
+it has three structure pieces running
 down the middle, and three wheels on each side, two on each structure piece.
+
 The robot forms a bit of a tree, with the center structure piece as the root,
 two wheels and two structure pieces as children, and two wheels as children
-of each of the structure pieces. For simplicity at the moment, however, I
+of each of the structure pieces. This tree-like structure is why I chose 
+a LISP for the language used to program the robots.
+For simplicity at the moment, however, I
 have the robot represented as a list, with each piece getting an ID starting
 with the root at 1.
 
