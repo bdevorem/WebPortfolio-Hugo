@@ -35,6 +35,13 @@ I introduced a function that I have named `go` at the moment.
  1. `(go ID SPEED)` runs wheel with the ID ID at speed SPEED. SPEED is in the range `[-1, 1]` where `-1` is full reverse and `1` is full forward. *Forward* is the direction of the treads on the wheel sprite.  
  2. `(go ID)` simply returns the current speed of the wheel identified by ID.
 
+The biggest link between the editors that you might have seen in my previous
+posts and the game window you see below is that the game window will run
+a user defined function called `run` every iteration of the game loop.
+This `run` function must be defined in global scope (i.e. using `def`),
+and it must take no arguments (i.e. it must be declared with something like
+`(def run (fun '() ...))`).
+
 In the little demo below, I have a very simply program set up to drive the
 robot in circles. To start it, press "Start Script". You can modify the program,
 and click "Reload Script" whenever you want to.
