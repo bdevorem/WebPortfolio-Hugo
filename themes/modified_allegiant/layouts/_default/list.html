@@ -2,6 +2,7 @@
 <section id="content" role="main">
   <h1 class="headering">
       {{ if in (first 2 (split .URL "/")) "tags" }}Tagged with {{ end }}
+      {{ if in (first 2 (split .URL "/")) "series" }}A series of {{ end }}
       {{ .Title }}
   </h1>
   {{ range .Data.Pages }}

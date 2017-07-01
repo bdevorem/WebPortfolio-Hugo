@@ -69,9 +69,19 @@
     <div class="clearfix"></div>
 
 <div>
-    Tags: 
-    {{ range .Params.tags }}
-        <a href="/tags/{{ . | urlize }}">{{ . }}</a> 
+    {{ if .Params.tags }}
+        Tags: 
+        {{ range .Params.tags }}
+            <a href="/tags/{{ . | urlize }}">{{ . }}</a> 
+        {{ end }}
+    {{ else }}
+        Not tagged with anything yet.
+    {{ end }}
+    {{ if .Params.series }}
+        <br>Part of a series on  
+        {{ range .Params.series }}
+            <a href="/series/{{ . | urlize }}">{{ . }}</a>.
+        {{ end }}
     {{ end }}
 </div>
 {{ end }}
