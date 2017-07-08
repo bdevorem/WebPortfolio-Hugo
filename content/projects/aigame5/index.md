@@ -37,7 +37,9 @@ series = [ "AI Game" ]
    "START_TURN"      (do (left 0.6) (right 0.6) (def time 12) "TURN")
    ;when state is turn, subtract 1 from time, if it is below 0 go to start straight
    "TURN"            (do (def time (- time 1)) (if (> 0 time) "START_STRAIGHT" "TURN"))
-))))
+  )
+  (log "test")
+)))
 {{< /editor >}}
 
 {{< game >}}

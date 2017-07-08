@@ -73,6 +73,8 @@ function parse(code) {
                     if (code[1] === "\"") {
                         str += "\"";
                         code = code.slice(2);
+                    } else {
+                        code = code.slice(1);
                     }
                 } else {
                     str += code[0];

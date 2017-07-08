@@ -23,7 +23,7 @@ footer {
 .lower label,
 .overlay ul li a,
 strong {
-    text-transform: uppercase
+    /*text-transform: uppercase*/
 }
 #copyright,
 #nav-below,

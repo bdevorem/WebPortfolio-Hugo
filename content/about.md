@@ -1,36 +1,40 @@
 +++
 date = "2016-10-07T23:24:00-04:00"
+updated = "2016-10-07T23:24:00-04:00"
 draft = false
 visible = false
 title = "About Me"
 +++
 
-My name is John Westhoff.  
-Friends call me **Jeffrey** for short (college nickname).  
-Or **JohnathonNow** (high school nickname).  
-Or **Johnbot** (childhood nickname).  
+Hi. If you're reading this, then I'm already dead.
 
-I am a Junior Computer Science major at the University of Notre Dame.
-I live in [Stanford Hall](http://www3.nd.edu/~stanford/),
-and I really enjoy working on side projects.
-I currently serve as the mascot for the 
-[Notre Dame Linux Users Group](http://ndlug.herokuapp.com/), and they're
+Actually, probably not, since this blog is being hosted on a
+cloud server that I pay for monthly, and when I die I assume it will
+just get shut down. Also, there is likely a post that's pretty recent.
+If not, well, contact me and tell me to stop being lazy.
+
+Anyway, my name is John Westhoff. Friends call me **Jeffrey** for short.
+Online I like the usernames **JohnBot** and **JohnathonNow**.<br>
+I am a senior Computer Science major at the University of Notre Dame, living 
+in [Stanford Hall](http://www3.nd.edu/~stanford/).
+I currently serve as the <s>mascot</s> secretary for the 
+[Notre Dame Linux Users Group](http://ndlug.org/), and they're
 the ones who started calling me Jeffrey.
 
+My current life plans are to graduate, start a PhD program somewhere,
+and eventually become a professor. My technical areas of interest include
+robotics and automation, machine learning, programming languages, really high
+level stuff, really low level stuff, and just about everything in between.
+If I had the time and money, I'd really like to design a processor, make
+a language and a compiler for the processor, and eventually write an operating
+system for the processor. Since I can't really do that, I just work on random
+little things all the time.
 
-Anyway, this is my blog of sorts. It primarily serves two purposes:  
-    1. To help me get practice with writing and sharing my work.
-Communication is a key feature of the human race, and there is a clear
-benefit to being good at communicating.  
-    2. To help me get practice with documenting my work.
-It is not uncommon for me to resume working on something months or even years after
-I had stopped - and it can be hard to see where I left off or even how I did things
-previously. By documenting everything out in the open like this it should be easier
-for me to pick up where I left off. Additionally, using past work can make solving
-already-solved problems easier.  
+When I'm not writing code, I tend to my diverse hobbies. I like video games,
+and I play a wide variety of them when I have the time. I've been trying
+to pick up wood working, and when I'm home I spend a lot of time in the garage
+trying to turn things on my lathe. My girlfriend [breezy](http://bashfulbytes.com/)
+is my inspiration for a lot of what I do, and is one of the biggest
+reasons I want to go to grad school. 
 
-Note that neither of these reasons for the blog's existence require that the blog
-have an audience - the purpose of this blog really isn't to share anything - at 
-least not at the moment. That being said, I will try to write the posts with
-others in mind, as I would like an audience - I just don't expect one.  
 

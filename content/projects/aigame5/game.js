@@ -1,6 +1,7 @@
 //VERSION 2
-const THRUST_VAL = 2000;
+const THRUST_VAL = 1200;
 const MAX_FORCE = Infinity;
+const ANIMATION_SPEED = 60;
 
 var editor = ace.edit("editor");
 editor.setTheme("ace/theme/chrome");
@@ -28,13 +29,12 @@ function start() {
 
 function preload() {
     game.load.image('block', 'block.png');
-    game.load.image('wheel', 'wheel.png');
+    game.load.spritesheet('wheel', 'wheel_strip.png', 32, 32, 5, 0, 1);
     game.time.advancedTiming = true;
     game.stage.disableVisibilityChange = true;
     game.input.enabled = false;
     game.input.touch.preventDefault = false;
     Phaser.Canvas.setTouchAction(game.canvas, "auto");
-    game.scale.m
     game.scale.refresh();
 }
 
@@ -67,6 +67,7 @@ function add_part(type, base, v, h) {
     n.body.damping = 0.9;
     n.robot_speed = 0;
     n.robot_children = [];
+    n.forward = n.animations.add("forward");
     n.type = type;
     n.id = all_parts.length;
     all_parts.push(n);
@@ -91,12 +92,17 @@ function create() {
 }
 
 function update() {
-    if (runner) {
-        eval(runner);
-    }
+    (typeof telem_clear != 'undefined') && telem_clear();
+    (typeof runner != 'undefined') && eval(runner);
     for (var i = 0; i < all_parts.length; i++) {
         if (all_parts[i].robot_speed != 0) {
             all_parts[i].body.thrust(all_parts[i].robot_speed * THRUST_VAL);
+            if (!all_parts[i].forward.isPlaying) {
+                all_parts[i].forward.reversed = (all_parts[i].robot_speed < 0);
+                all_parts[i].forward.play(
+                 Math.abs(Math.floor(all_parts[i].robot_speed*ANIMATION_SPEED)),
+                 false);
+            }
         }
     }
 }
@@ -135,4 +141,13 @@ function part(c, n) {
     } else {
         n.eval = new Node("float", which.robot_speed);
     }
+}
+
+//Add telemetry function to parser
+gFunMap['log'] = function(c, n) {
+    n.eval = _eval(c, n.children[1]).eval;
+    $('#telem').html($('#telem').html() + stringify(n.eval) + '<br>');
+}
+function telem_clear(c, n) {
+    $('#telem').empty();
 }
