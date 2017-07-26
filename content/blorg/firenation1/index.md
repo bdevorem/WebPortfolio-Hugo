@@ -3,6 +3,8 @@ date = "2017-07-25T06:04:14-05:00"
 draft = false
 title = "Fire Lord Ozai, you and your forefathers have devastated the balance of this world, and now you shall pay the ultimate price!"
 heading = "Blog"
+categories = [ "For Fun" ]
+series = [ "The Fire Nation" ]
 +++
 
 I haven't posted in a little while, and thought an update was due, so today
