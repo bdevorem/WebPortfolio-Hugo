@@ -28,8 +28,9 @@ function start() {
 }
 
 function preload() {
-    game.load.image('block', 'block.png');
-    game.load.spritesheet('wheel', 'wheel_strip.png', 32, 32, 5, 0, 1);
+    game.load.image('block', 'pics/block.png');
+    game.load.image('gyro', 'pics/gyroscope.png');
+    game.load.spritesheet('wheel', 'pics/wheel_strip.png', 32, 32, 5, 0, 1);
     game.time.advancedTiming = true;
     game.stage.disableVisibilityChange = true;
     game.input.enabled = false;
@@ -38,6 +39,19 @@ function preload() {
     game.scale.refresh();
 }
 
+function add_part_np(type, base, v, h) {
+    var n = null;
+    //n = game.make.sprite(base.x-(32*h), base.y-(32*v), type);
+    n = game.make.sprite(-(32*h), -(32*v), type);
+    base.addChild(n);
+    n.robot_speed = 0;
+    n.robot_children = [];
+    n.type = type;
+    n.mom = base;
+    n.id = all_parts.length;
+    all_parts.push(n);
+    return n;
+}
 function add_part(type, base, v, h) {
     var n = null;
     if (base) {
@@ -89,6 +103,7 @@ function create() {
     var rm = add_part('wheel', robot_root, 0, 1);    //6
     var lb = add_part('wheel', back, 0, -1);         //7
     var rb = add_part('wheel', back, 0, 1);          //8
+    var gyro = add_part_np('gyro', robot_root, 1, 0);//9
 }
 
 function update() {
@@ -98,7 +113,7 @@ function update() {
         if (all_parts[i].robot_speed != 0) {
             all_parts[i].body.thrust(all_parts[i].robot_speed * THRUST_VAL);
             if (!all_parts[i].forward.isPlaying) {
-                all_parts[i].forward.reversed = (all_parts[i].robot_speed < 0);
+                all_parts[i].forward.reversed = (all_parts[i].robot_speed > 0);
                 all_parts[i].forward.play(
                  Math.abs(Math.floor(all_parts[i].robot_speed*ANIMATION_SPEED)),
                  false);
@@ -131,18 +146,31 @@ gFunMap['part#'] = function(c, n) {
 }
 function part(c, n) {
     var which = n.children[0].eval.value;
-    if (n.children.length > 1) {
-        n.eval = _eval(c, n.children[1]).eval;
-        var val = Math.min(Math.max(n.eval.value, -1), 1);
-        n.eval = new Node("float", val);
-        if (which.type == "wheel") {
-            which.robot_speed = (val);
+    if (which.type === "wheel") {
+        if (n.children.length > 1) {
+            n.eval = _eval(c, n.children[1]).eval;
+            var val = Math.min(Math.max(n.eval.value, -1), 1);
+            n.eval = new Node("float", val);
+            if (which.type == "wheel") {
+                which.robot_speed = (val);
+            }
+        } else {
+            n.eval = new Node("float", which.robot_speed);
         }
     } else {
-        n.eval = new Node("float", which.robot_speed);
+        n.eval = new Node("float", which.mom.body.angularVelocity);
     }
 }
 
+var acc = {'x': 0, 'y':0};
+//Add
+gFunMap['loggo'] = function(c, n) {
+    var v = all_parts[1].body.velocity;
+    var t = '' + (v.x - acc.x) + ',' + (v.y - acc.y);
+    acc.x = v.x;
+    acc.y = v.y;
+    $('#telem').html($('#telem').html() + "t:" + t + '<br>');
+}
 //Add telemetry function to parser
 gFunMap['log'] = function(c, n) {
     n.eval = _eval(c, n.children[1]).eval;
