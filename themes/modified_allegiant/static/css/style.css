@@ -189,7 +189,9 @@ h3,
 h3 a {
     font-weight: 400
 }
-b,
+b {
+    font-weigth: bold
+}
 strong {
     font-weight: 400
 }
