@@ -3,8 +3,8 @@ date = "2016-12-17T23:03:30-04:00"
 draft = false
 title = "Data Structures Final Project - SnowGPS"
 tags = [ "Projects", "Javascript", "Web", "Leaflet", "Python", "C++" ]
-categories = [ "School" ]
-series = [ "Data Structures" ]
+categories = [ "Data Structures" ]
+series = [ "School" ]
 +++
 
 For our final project for our Data Structures course, my group decided to

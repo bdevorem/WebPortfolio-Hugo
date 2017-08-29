@@ -3,8 +3,8 @@ date = "2016-03-20T21:08:52-04:00"
 draft = false
 title = "Fundamentals of Computing I Final"
 tags = [ "Projects", "Notre Dame", "Bullet HFIL" ]
-categories = [ "School" ]
-series = [ "Findamentals of Computing" ]
+categories = [ "Computing" ]
+series = [ "School" ]
 +++
 
 For my **Fundamentals of Computing I** class final project,
