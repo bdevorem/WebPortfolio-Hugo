@@ -4,7 +4,7 @@ draft = false
 title = "Markup for note taking"
 tags = [ "Projects" ]
 categories = [ "For Fun" ]
-series = [ "AI Game" ]
+series = [ "School" ]
 +++
 I'm a week into my senior year, and I've gotten sick of using OneNote for note taking.
 As a linux user, I'm pretty much limited to the web interface or WINE, and
