@@ -1,6 +1,6 @@
 +++
 date = "2017-08-29T06:04:14-04:00"
-draft = true
+draft = false
 title = "Progress on a GameCube adapter for ozai"
 heading = "Blog"
 categories = [ "For Fun" ]
