@@ -6,17 +6,13 @@ visible = false
 title = "About Me"
 +++
 
-Hi. If you're reading this, then I'm already dead.
+<iframe src="https://momento360.com/e/u/1aa6d58f53154bbea3fc10e6f13d5a4d?utm_campaign=embed&utm_source=other&utm_medium=other"
+        allowfullscreen="true" width="100%" height="300px"></iframe>
 
-Actually, probably not, since this blog is being hosted on a
-cloud server that I pay for monthly, and when I die I assume it will
-just get shut down. Also, there is likely a post that's pretty recent.
-If not, well, contact me and tell me to stop being lazy.
-
-Anyway, my name is John Westhoff. Friends call me **Jeffrey** for short.
+My name is John Westhoff. Friends call me **Jeffrey** for short.
 Online I like the usernames **JohnBot** and **JohnathonNow**.<br>
 I am a senior Computer Science major at the University of Notre Dame, living 
-in [Stanford Hall](http://www3.nd.edu/~stanford/).
+in [Stanford Hall](http://www3.nd.edu/~stanford/) (pictured above).
 I currently serve as the <s>mascot</s> secretary for the 
 [Notre Dame Linux Users Group](http://ndlug.org/), and they're
 the ones who started calling me Jeffrey.
