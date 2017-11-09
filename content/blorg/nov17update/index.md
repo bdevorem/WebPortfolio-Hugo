@@ -10,6 +10,8 @@ series = [ "" ]
 This semester has definitely been my busiest. I know there are a few projects that I started and haven't had any updates
 on for a while now, so I figured I'd make a general update post.
 
+<!--more-->
+
 Projects on Haitus
 ==================
 
