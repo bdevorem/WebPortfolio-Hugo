@@ -17,7 +17,8 @@ Assuming it is the same, I'm just going to copy this post there too.
 I am interested in stuff. I also have other interests in things. I have a number of hobbies. 
 
 Wait, does this post also have to be ~500 words? Fine, I'll take it more seriously. I guess I am interested in video games. I made
-sure to have a four day weekend so that I can drink and play Mario Kart more days than I have to go to class. I am studying
+sure to have a four day weekend every weekend so that I can drink and play Mario Kart more days than I have to go to class. 
+I am studying
 Computer Science because my sisters wouldn't let me be a doctor and instead wanted me to be an engineer like their husbands,
 but jokes on them bc imma get a PhD in Computer Science. At least, that's what I want to do. So far I haven't gotten into any grad
 schools, but that may be because my applications aren't technically finished.
