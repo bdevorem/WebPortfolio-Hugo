@@ -12,3 +12,5 @@ title = "John Westhoff's Blog"
 tag = "tags"
 category = "categories"
 series = "series"
+[outputs]
+section = ["RSS"]
