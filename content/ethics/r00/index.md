@@ -63,7 +63,7 @@ of wooded plants. I won't explain why, because I think it is obvious.
 Anyways, I think CS as a field is a clunky mess of artists, engineers, scientists, mathematicians,
 good professors, professors who called me bad at age of empires ii, nerds, whiney students, 
 and pretentious students. This causes CS programs to force the theory buffs to take software
-engineering courses, software engineers to learn their maths in theor classes, artists to
+engineering courses, software engineers to learn their maths in theory classes, artists to
 resent both, and professors to wonder why we're ABET certified at all. Personally, I would
 split the major, into either its own school of computing or into both `Arts and Letters` and
 `Engineering`. Then we could have `Computer Science`, which is all theory and math,
