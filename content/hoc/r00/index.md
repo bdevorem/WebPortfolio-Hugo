@@ -2,7 +2,7 @@
 date = "2018-01-19T23:24:00-04:00"
 draft = false
 visible = false
-title = "Reading 00: Board Games"
+title = "Reading 00: !unix -a"
 tags = [ "HoC" ]
 categories = [ "Hoc" ]
 series = [ "Hoc" ]
