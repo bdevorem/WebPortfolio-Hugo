@@ -1,4 +1,5 @@
-        {{ partial "header.html" . }}
+<script src="https://johnwesthoff.com/commento.min.js"></script>
+    {{ partial "header.html" . }}
     {{ $baseurl := .Site.BaseURL }}
     <section id="content" role="main">
     <section class="entry-meta">
@@ -92,8 +93,13 @@
 </figure>
 -->
 <hr>
-<!--
-If you're going to use DISQUS comments, insert code here.
--->
+<div id="commento"></div>
+<script>
+window.onload = function() {
+    Commento.init({
+        serverUrl: "http://johnwesthoff.com:8080",
+    });
+}
+</script>
 </section>
 {{ partial "footer.html" . }}
