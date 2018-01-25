@@ -95,14 +95,12 @@
 <hr>
 <div id="commento"></div>
 <script>
-window.onload = function() {
-    Commento.init({
-        serverUrl: "https://johnwesthoff.com/comments",
-        showdownUrl: "https://johnwesthoff.com/assets/vendor/showdown.min.js",
-        commentoCssUrl: "https://johnwesthoff.com/assets/style/commento.min.css",
-         
-    });
-}
+Commento.init({
+    serverUrl: "https://johnwesthoff.com/comments",
+    showdownUrl: "https://johnwesthoff.com/assets/vendor/showdown.min.js",
+    commentoCssUrl: "https://johnwesthoff.com/assets/style/commento.min.css",
+     
+});
 </script>
 </section>
 {{ partial "footer.html" . }}
