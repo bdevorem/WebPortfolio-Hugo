@@ -28,12 +28,12 @@ and I think you are invincible during it, and your ship is fully repaired when i
 
 Anyways, the game seems to be an early example of a few tropes with video games that is still happening today:  
 
- 1. Head shots do more damage. In lots of shooter games, shooting for the head became all the rage. There are games where a gun can kill in one shot to the head or three to the body. This took that to the
+ 1. *Head shots do more damage*. In lots of shooter games, shooting for the head became all the rage. There are games where a gun can kill in one shot to the head or three to the body. This took that to the
 extreme. One shot to the weak spot kills the AT-AT, but you need FORTY EIGHT shots to the body to destroy it!  
- 2. People love survival games. A huge portion of the love for Call of Duty is this survival game mode where you fight Nazi Zombies. People really like the idea of playing a game until they lose. Personally,
+ 2. *People love survival games*. A huge portion of the love for Call of Duty is this survival game mode where you fight Nazi Zombies. People really like the idea of playing a game until they lose. Personally,
 I hate these things in single player games. They work fine if you have a few friends with you, but with one person, I'd much rather be told an interesting story, and I'd much rather win than play for
 eight hours just to lose.  
- 3. Games based off movies are bad. I don't understand people who buy games based off movies, they're never any good since they're just cash grabs. Bird Verse Camel isn't a terrible game, but it's not
+ 3. *Games based off movies are bad*. I don't understand people who buy games based off movies, they're never any good since they're just cash grabs. Bird Verse Camel isn't a terrible game, but it's not
 as memorable as a lot of the other Atari games. It does have one distinguishing feature, though - you shoot at a constant rate, rather than firing again as soon as your bullet disappears, which
 was really common.  
 
