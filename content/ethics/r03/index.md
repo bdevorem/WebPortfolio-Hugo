@@ -8,6 +8,8 @@ categories = [ "Ethics" ]
 series = [ "Ethics" ]
 +++
 
+I can't believe I have to write this when the EAGLES might win a super bowl for once...
+
 I definitely feel that I miss out on things. I'm definitely a big nerd, and I spend a lot of
 time on school work, but I also spend a lot of time tinkering with things. I feel a lot of
 guilt over living 11 hours from home, and definitely feel like I'm missing a lot with my family.
