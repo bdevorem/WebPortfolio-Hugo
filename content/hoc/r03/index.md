@@ -80,3 +80,28 @@ stuck in a room until the time ran out and I died. Oh well.
 That's the room that I spent my life in. I can't climb the vines above about where the robot's head
 is now. I'd google how to get past it, but I've already seen a 
 [really good review of this game](https://www.youtube.com/watch?v=XZSObFVfI5E).
+
+
+Which is better?
+==
+
+I forgot to compare the types of games that are good on each. Back then, it seemed that
+platformers and simpler games worked better on console, and more complex games worked better
+on PC. I think there was a brief time in the 2000s where there was a difference, but that has
+passed.
+Now, categorically I think all games are better on PC now compared to home 
+consoles. Games played on a big screen? I have a projector for that. I used to 
+have my computer hooked up to a TV. I can play my first person shooters real 
+good on the PC. I can play Mario Kart 8 on a higher resolution than on my Wii U 
+or my Switch, with whatever controllers I want, at full speed. PC gaming has 
+the one disadvantage of a much higher upfront cost, a full HD good experience 
+will cost around $600, compared to say $300 for the Switch or Xbox One. But 
+then the games are much cheaper on PC. I refuse to pay more than $20 for a PC 
+game, and usually pay less than $5. I have over 300 PC games, not counting all 
+of the free games that I can play, and they will keep working on newer hardware 
+for the foreseeable future. My PS3 couldn't play PS2 games, and my PS4 can't 
+play PS3 games... Really? I can still play Half-Life. If I load VMs, wine, or 
+emulators, I can play games that are even older.  I remember playing Halo 3 split screen.
+They don't do that anymore. If I want to play games with my friends sitting on my futon, we play
+PC games. I do think consoles will stick around, but the PC wins out on versatility by
+a landslide. #PCMR
