@@ -30,7 +30,7 @@ In high school when I got to play with robots all day, things were only a little
 ran for a few minutes at a time though. We tried to keep things as safe as we could. Anything that could possibly fail unsafely had sensors to detect that the system was in a safe state, and those sensors were designed
 to fail in a way that we knew we were in an unsafe state. For example, we had two really big screws that we used to climb up a pyramid:
 
-{{ youtube BiRkTWvlI5E }}
+{{< youtube BiRkTWvlI5E >}}
 
 If you turned those screws too much, they would eventually bend, a lot, and then snap, and potentially fling a steel rod into someone. We had switches trigger when the screws reached a certain point, and the motor would turn off,
 so it could no longer turn. This was not handled in software, but by the circuit driving the motor. If the switch were to break or something, it would be the same as it being pressed electrically, so the robot would then
@@ -43,3 +43,4 @@ firing, as the wrench was connected to a drum that wound down a seat belt that w
 point is this safety things are hard, as there is a lot to consider.
 
 ![image](a.png)
+The orange thing on the far right sticking out of the robot over the blue bumpers was a series of duck tape extensions we stuck on the wrench.
