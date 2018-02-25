@@ -67,4 +67,5 @@ all this, where the government tried to keep a close eye on everyone
 because once the population of earth was one million aliens would come
 and blow it up. That was the most normal part of the entire show. It
 came out in 2007, so pre-Snowden but post 9/11, although I guess Japan
-has a different history for this sort of thing.)
+has a different history for this sort of thing. Also, I think the
+movie Brazil is relevant.)
