@@ -8,7 +8,8 @@ categories = [ "Ethics" ]
 series = [ "Ethics" ]
 +++
 
-#What does it mean for a corporation to be named Jeff?
+What does it mean for a corporation to be named Jeff?
+=
 
 The question of whether corporations are people seems to be primarily about whether they have the same rights as other people.
 The right to free speech seems especially important, as a few of the articles talk about corporate rights to political speech,
@@ -28,7 +29,10 @@ output decreases, so people die? It's kind of the whole point to corporations th
 you punish a corporation the way you punish a person, bad things happen. Personally, I think you can't really punish the corporation, you
 have to punish the people leading it, but that defeats the purpose of a corporation, and then they're not really the people, but whatever.
 
-#Why Sony should be publically executed:
+Wait corporations already have names my joke in the heading doesn't work at all.
+
+Why Sony should be publically executed:
+=
 
 So, I've decided my argument against killing off corporations doesn't apply to frivolous and foreign ones. Sony doesn't do anything
 good for anyone. You know what Sony does? Sony leaks your PS3 credit card info, rootkits your PC, endorses EA's awful Star Wars Battlefron 2
@@ -54,7 +58,8 @@ as bad lately, though I guess cripling the PS3 was a mean thing to do, but is re
 on your computer." I guess something a little tighter would have been nice, like "No implementing DRM ever again", and then they
 can still be executed for making The Emoji Movie.
 
-#That Last Question:
+That Last Question:
+=
 
 Hmm... I answered it a little already, so I guess I'll answer it more so I don't lose points. I definitely think having rights brings
 with it having moral and ethical obligations, but I think those requirements are irrelevant. The moral and ethical obligations a person
