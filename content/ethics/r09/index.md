@@ -8,6 +8,8 @@ categories = [ "Ethics" ]
 series = [ "Ethics" ]
 +++
 
+Updated with the better version [here](https://johnwesthoff.com/ethics/r09bad), please read that instead.
+
 Those of you who've known me well over the past few years may have noticed that you've never heard me swear.
 It's just something I've never been comfortable doing - there are many situations in which I would like to, but
 I find that if I try, some force stops me. But this Net Neutrality issue... There are a lot of things
