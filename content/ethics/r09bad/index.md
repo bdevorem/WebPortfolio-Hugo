@@ -10,6 +10,8 @@ series = [ "Ethics" ]
 
 
 Those of you who’ve known me well over the past few years may have noticed that you’ve never heard me swear. It’s just something I’ve never been comfortable doing - there are many situations in which I would like to, but I find that if I try, some force stops me. But this Net Neutrality issue… There are a lot of things I would like to say to the likes of Comcast and AT&T. So, I’ve asked my good friend, The Really Angry One, Shabadoo, to take my weak words and sprinkle on some sentence enhancers. 
+
+
 Net Neutrality just makes sense. Because one of the graders said I should reference the articles more, the wired one says that net neutrality is basically that the ISPs aren’t allowed to control the pipes that my tax money paid for. That’s the way it fucking should be. Some ass backwards companies think shit like banning customers from using Wi-Fi routers is an acceptable business practice. Are you bullshitting kidding me? Who in the hell thought that was a good idea? And who on God’s green earth still thinks that is a good idea?
 
 
@@ -20,6 +22,8 @@ A lot of arguments for Net Neutrality center on choice of provider, you know, so
 
 
 I will not discuss where I stand on it, because that should be clear. I also technically didn’t put any of the other answers in my own words either, so basically I haven’t done any of the assignment so far. Oh well.
+
+
 If I got to enforce net neutrality, what a world it would be. First off, I would condense Verizon, Comcast, and AT&T into a goddamn furnace, strip them of all their money, and make a nation wide mesh network. Bang, now everything is decentralized, so there can be no corporations or governments messing with our shit. All traffic is equal, or if a node tries to restrict traffic, that node is routed around. I guess companies could try to buy nodes. Make that bullshit illegal, with corporate death as the penalty. Or make it legal to shoot anyone who owns more than six nodes.
 
 
