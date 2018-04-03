@@ -1,6 +1,7 @@
 {{ partial "header.html" . }}
 <section id="content" role="main">
-  {{ range $index, $page := .Paginator.Pages}}
+  {{ $paginator := .Paginate (where .Data.Pages ".Params.visible" "!=" false) }}
+  {{ range $paginator.Pages }}
       {{ if not ((isset .Params "visible")) }}
           {{ .Render "li" }}
       {{ end }}
