@@ -2,7 +2,7 @@
 date = "2018-04-08T17:36:00-04:00"
 draft = false
 visible = false
-title = "<![CDATA[<br>I, bobbit, am trying to take over the world, and there's nothing you can do to stop me.]]>"
+title = "Reading 11: AI"
 description = "waht does this do"
 tags = [ "Ethics" ]
 categories = [ "Ethics" ]
