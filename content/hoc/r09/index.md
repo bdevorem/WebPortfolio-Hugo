@@ -1,5 +1,5 @@
 +++
-date = "2018-04-2018T17:24:00-04:00"
+date = "2018-04-13:24:00-04:00"
 draft = false
 visible = false
 title = "Reading 09: Jeffrey gives up"
