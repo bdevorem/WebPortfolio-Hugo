@@ -1,5 +1,5 @@
 +++
-date = "2018-04-05T17:36:00-04:00"
+date = "2018-04-15T17:36:00-04:00"
 draft = false
 visible = false
 title = "Reading 12: Self Driving Cars"
