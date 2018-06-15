@@ -11,7 +11,7 @@ During my last summer internship, a thought popped into my head. I realized that
 my graduation cap, to have one that would be totally unique. Well, [it turns out someone beat me to the punch](https://imgur.com/gallery/xr0P0), but I could still make one that was totally unique by stealing ideas from other places too. 
 Reddit's [r/place](https://www.reddit.com/r/place/) was really cool. I figured I could recreate that on a 32x32 board.
 
-My original idea was to just order an LED matrix, stick hook it up to an ESP8266, and broadcast a Wi-Fi hotspot. Then, if anyone connected
+My original idea was to just order an LED matrix, hook it up to an ESP8266, and broadcast a Wi-Fi hotspot. Then, if anyone connected
 to the hotspot, they would be redirected to a page where they could place pixels on my graduation cap. I ultimately decided against
 broadcasting my own hotspot and redirecting people, because that seemed more prone to not working well.
 
@@ -26,7 +26,7 @@ in order to power it. The bottom ended up looking like this:
 ![bottom of cap](underside.jpg)
 
 Once it was all wired up, I set up [hzeller's LED Matrix library](https://github.com/hzeller/rpi-rgb-led-matrix) on the Pi, and ran one
-of the demos. The ribon cable that came with the matrix didn't solder well, so it had some bad connections, so I ended up de-soldering it
+of the demos. The ribbon cable that came with the matrix didn't solder well, so it had some bad connections, so I ended up de-soldering it
 and soldering on individual jumper wires, but once that was done, I was met with this:
 
 {{< youtube \_ehnUfFS-5s >}}
