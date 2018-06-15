@@ -3,6 +3,7 @@ date = "2017-05-20T23:03:30-04:00"
 draft = false
 title = "Spring 2017 Semester-in-Review"
 tags = [ "Projects" ]
+heading = "Blog"
 categories = [ "Summary" ]
 series = [ "School" ]
 +++

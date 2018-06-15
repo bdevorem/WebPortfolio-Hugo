@@ -2,6 +2,7 @@
 date = "2018-06-15T02:03:30-04:00"
 draft = false
 title = "My new favorite thing"
+heading = "Blog"
 tags = [ "Ads" ]
 categories = [ "Ads" ]
 series = [ "Goofing off" ]
