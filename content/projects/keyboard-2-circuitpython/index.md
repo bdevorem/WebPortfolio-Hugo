@@ -6,7 +6,6 @@ tags = [ "Keyboard", "IBM", "Legacy", "CircuitPython" ]
 categories = [ "For Fun" ]
 series = [ "IBM" ]
 +++
-<head><style>img {width: 100%; } </style></head>
 
 Now I know the first time I wrote about my Model M keyboard I said it
 wasn't worth it to leave a $10 dev board attached to the keyboard,
@@ -72,6 +71,7 @@ PS/2 message, 11, we can figure out what the initial low pulse was.
 We don't need to, though, as we have enough information to uniquely
 identify the key.
 
+<head><style>img {width: 100%; } </style></head>
 ![Keypress wave form](keypress.png)
 
 If, for whatever reason, we did want the scan code, it isn't hard
