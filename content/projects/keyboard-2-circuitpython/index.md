@@ -6,6 +6,7 @@ tags = [ "Keyboard", "IBM", "Legacy", "CircuitPython" ]
 categories = [ "For Fun" ]
 series = [ "IBM" ]
 +++
+<head><style>img {width: 100%; } </style></head>
 
 Now I know the first time I wrote about my Model M keyboard I said it
 wasn't worth it to leave a $10 dev board attached to the keyboard,
