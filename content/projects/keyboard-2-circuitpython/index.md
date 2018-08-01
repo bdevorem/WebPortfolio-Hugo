@@ -13,8 +13,8 @@ opting instead to use an adapter, but I've changed my mind. My
 change of heart came about for two reasons:
 
 1. I couldn't get the $5 adapter to work.  
-2. Being able to remap keys on the fly is definitely worth $5.
-
+2. Being able to remap keys on the fly is definitely worth $5.  
+  
 That second point is in reference to my [recent blog post](https://johnwesthoff.com/blorg/circuitpythonshilling/). 
 I found it easier to get my own IBM Model M to USB adapter working,
 this time opting to use a Trinket M0 CircuitPython board.
