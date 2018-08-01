@@ -15,7 +15,7 @@ change of heart came about for two reasons:
 
 1. I couldn't get the $5 adapter to work.  
 2. Being able to remap keys on the fly is definitely worth $5.  
-  
+<br>
   
 That second point is in reference to my [recent blog post](https://johnwesthoff.com/blorg/circuitpythonshilling/). 
 I found it easier to get my own IBM Model M to USB adapter working,
