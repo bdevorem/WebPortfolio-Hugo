@@ -70,6 +70,8 @@ PS/2 message, 11, we can figure out what the initial low pulse was.
 We don't need to, though, as we have enough information to uniquely
 identify the key.
 
+![Keypress wave form](keypress.png)
+
 If, for whatever reason, we did want the scan code, it isn't hard
 to figure out.
 Working backwards, we know the scancode ends in four zeros, then
