@@ -5,7 +5,9 @@
   <a class="post-type" href="{{.Site.BaseURL}}/{{.Section}}">
           {{ .Param "heading" }}
   </a>
+  <p>
   {{ .Summary }}
+  </p>
   {{ if .Truncated }}<a class="moretag" href="{{ .Permalink }}">Continue reading &#8614;</a>{{ end }}
   <hr class="divider">
   </article>
