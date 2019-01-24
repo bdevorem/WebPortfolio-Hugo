@@ -1,6 +1,6 @@
 +++
 date = "2016-10-07T23:24:00-04:00"
-updated = "2018-09-10T23:24:00-04:00"
+updated = "2019-01-24T10:43:00-04:00"
 draft = false
 visible = false
 title = "About Me"
@@ -20,17 +20,23 @@ I <s>spent the summer running around chanting "37-0" until the Michigan season o
 my PhD studies at NYU, where I am currently a first year.
 
 My technical areas of interest include
-robotics and automation, machine learning, programming languages, really high
-level stuff, really low level stuff, and just about everything in between.
-If I had the time and money, I'd really like to design a processor, make
-a language and a compiler for the processor, and eventually write an operating
-system for the processor. Since I can't really do that, I just work on random
-little things all the time.
+robotics and automation, machine learning, programming languages,
+systems, really high level stuff, really low level stuff, 
+and just about everything in between.
+My current area of research is in distributed systems, which I quite like, but I
+feel too young to be any more specific than that.
 
 When I'm not writing code, I tend to my diverse hobbies. I like video games,
-and I play a wide variety of them when I have the time. I've been trying
-to pick up wood working, and when I'm home I spend a lot of time in the garage
-trying to turn things on my lathe. My girlfriend [breezy](http://bashfulbytes.com/)
+and I play a wide variety of them when I have the time.
+More recently, I've been playing around with classic games more. I finally
+beat Super Mario 64 while procrastinating studying for my graduate algorithms final,
+so I have that going for me. 
+I've been trying
+to pick up wood working,
+and when I'm home I'd like to spend a lot of time in the garage
+trying to turn things on my lathe.
+
+My girlfriend [breezy](http://bashfulbytes.com/)
 is my inspiration for a lot of what I do. We started referring to ourselves as
 the CSE Power Couple, and we have worked on some cool projects together.
 
