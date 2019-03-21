@@ -1,5 +1,4 @@
 {{ if .Get 0 }}{{ else }}
-<script src="parser.js"></script>
 {{ end }}
 <script src="https://johnwesthoff.com/js/jquery.min.js"> </script>
 <head>
@@ -12,7 +11,7 @@ var editor = ace.edit("editor{{ .Get 0 }}");
 editor.setTheme("ace/theme/chrome");
 editor.setAutoScrollEditorIntoView(true);
 editor.setOption("maxLines", 30);
-editor.getSession().setMode("ace/mode/lisp");
+editor.getSession().setMode("ace/mode/javascript");
+eval(ace.edit('editor{{ .Get 0 }}').getValue());
 </script>
-<button id="but" onclick="var e = eval(parse(ace.edit('editor{{ .Get 0 }}').getValue())); $('#tb{{ .Get 0 }}').html('Result: <code>'+stringify(e)+'</code>');">Run</button>
-<div id="tb{{ .Get 0 }}">Result: </div>
+<button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); console.log(t); eval(t); ">Run</button>
