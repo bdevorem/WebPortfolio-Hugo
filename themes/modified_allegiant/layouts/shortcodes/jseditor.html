@@ -1,10 +1,9 @@
 {{ if .Get 0 }}{{ else }}
 {{ end }}
-<script src="https://johnwesthoff.com/js/jquery.min.js"> </script>
 <head>
 <style type="text/css" media="screen"> #editor { top: 0; right: 0; bottom: 0; left: 0; margin:0 auto;} </style>
 </head>
-<div id="editor{{ .Get 0 }}">{{ if len .Inner | ne 0 }}{{ .Inner }}{{ else }}(+ 1 1){{ end }} </div>
+<div id="editor{{ .Get 0 }}">{{ if len .Inner | ne 0 }}{{ trim .Inner " \n" }}{{ else }}(+ 1 1){{ end }} </div>
 <script src="https://johnwesthoff.com/js/ace/src-min-noconflict/ace.js"></script>
 <script>
 var editor = ace.edit("editor{{ .Get 0 }}");
@@ -12,6 +11,6 @@ editor.setTheme("ace/theme/chrome");
 editor.setAutoScrollEditorIntoView(true);
 editor.setOption("maxLines", 30);
 editor.getSession().setMode("ace/mode/javascript");
-eval(ace.edit('editor{{ .Get 0 }}').getValue());
+eval(ace.edit('editor').getValue());
 </script>
-<button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); console.log(t); eval(t); ">Run</button>
+<button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); console.log(t); parse(t); ">Run</button>
