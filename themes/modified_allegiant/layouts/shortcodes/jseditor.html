@@ -11,6 +11,11 @@ editor.setTheme("ace/theme/chrome");
 editor.setAutoScrollEditorIntoView(true);
 editor.setOption("maxLines", 30);
 editor.getSession().setMode("ace/mode/javascript");
-eval(ace.edit('editor').getValue());
+var code = new URL(window.location).searchParams.get("code");
+if (code) {
+    editor.setValue(code, new Number('0'));
+}
+eval(editor.getValue());
 </script>
-<button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); console.log(t); parse(t); ">Run</button>
+<button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); parse(t); ">Run</button>
+<button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); window.location = window.location.href.split('?')[0] + '?code=' + encodeURIComponent(t); " >Share</button>
