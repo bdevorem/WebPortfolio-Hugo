@@ -76,7 +76,13 @@ the red, blue, and green values of the color of the LED at <code>index</code>.
 </li>
 </ul>
 </div>
-
-I also define a few constants, which may also be helpful. They are `MIN`, which is the minimum LED subpixel value of `0`,
-`MAX`, which is the maximum LED subpixel value of `255`, `NUMPIXELS`, which is the number of pixels in the strip (currently `32`),
-and `FPS`, which is the number of times per second that `step` is called (currently `50`).
+<br>
+<div>
+I also define a few constants, which may also be helpful:
+<ul>
+<li><code>NUMPIXELS</code>: the number of LEDs in the strip (<code>32</code>).</li>
+<li><code>MIN</code>: the minimum LED subpixel value (<code>0</code>).</li>
+<li><code>MAX</code>: the maximum LED subpixel value (<code>255</code>).</li>
+<li><code>FPS</code>: the number of times per second <code>step</code> is called (<code>50</code>).</li>
+</ul>
+</div>
