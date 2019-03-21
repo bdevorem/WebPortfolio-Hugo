@@ -5,7 +5,13 @@ const MIN = 0;
 const MAX = 255;
 
 function parse(code) {
-    eval(code);
+    try {
+        eval(code);
+        return 'Success';
+    }
+    catch(err) {
+        return '<code>' + err + '</code>';
+    }
 }
 
 $(function() {

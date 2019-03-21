@@ -22,5 +22,6 @@ if (code) {
 }
 eval(editor.getValue());
 </script>
-<button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); parse(t); ">Run</button>
+<button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); $('#tb{{ .Get 0 }}').html(parse(t)); ">Run</button>
 <button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); window.location = window.location.href.split('?')[0] + '?b64=' + encodeURIComponent(btoa(t)); " >Share</button>
+<div id="tb{{ .Get 0 }}"></div>
