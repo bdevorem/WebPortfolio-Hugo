@@ -13,9 +13,14 @@ editor.setOption("maxLines", 30);
 editor.getSession().setMode("ace/mode/javascript");
 var code = new URL(window.location).searchParams.get("code");
 if (code) {
-    editor.setValue(code, new Number('0'));
+        editor.setValue(code, new Number('0'));
+} else {
+    var b64 = new URL(window.location).searchParams.get("b64");
+    if (b64) {
+        editor.setValue(atob(b64), new Number('0'));
+    }
 }
 eval(editor.getValue());
 </script>
 <button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); parse(t); ">Run</button>
-<button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); window.location = window.location.href.split('?')[0] + '?code=' + encodeURIComponent(t); " >Share</button>
+<button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); window.location = window.location.href.split('?')[0] + '?b64=' + encodeURIComponent(btoa(t)); " >Share</button>
