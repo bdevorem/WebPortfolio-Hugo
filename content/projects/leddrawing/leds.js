@@ -23,7 +23,7 @@ $(function() {
     function cap(s) {
         if (s < MIN) return MIN;
         if (s > MAX) return MAX;
-        return s;
+        return Math.floor(s);
     }
 
     function set(index, r, g, b) {
