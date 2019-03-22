@@ -5,13 +5,25 @@ const MIN = 0;
 const MAX = 255;
 
 function parse(code) {
+    var error = console.error;
+    var log = console.log;
+    var msg = [];
+    console.error = function(e) {
+        msg.push('<code>' + e + '</code>');
+    }
+    console.log = function(e) {
+        msg.push(e);
+    }
     try {
         eval(code);
-        return 'Success';
+        msg.push('Success');
     }
     catch(err) {
-        return '<code>' + err + '</code>';
+        msg.push('<code>' + err + '</code>');
     }
+    console.error = error;
+    console.log = log;
+    return msg.join('<br>');
 }
 
 $(function() {

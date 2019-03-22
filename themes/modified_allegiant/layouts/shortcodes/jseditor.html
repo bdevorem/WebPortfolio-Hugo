@@ -18,10 +18,21 @@ if (code) {
     var b64 = new URL(window.location).searchParams.get("b64");
     if (b64) {
         editor.setValue(atob(b64), new Number('0'));
+    } else {
+        var pb = new URL(window.location).searchParams.get("pb");
+        if (pb) {
+            console.log("going for it");
+            $.get("https://www.johnwesthoff.com/api/pb/", {'id': pb}, function(result, status){
+                console.log(result);
+                console.log(status);
+                editor.setValue(result, new Number('0'));
+                parse(result);
+          });
+        }
     }
 }
 eval(editor.getValue());
 </script>
 <button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); $('#tb{{ .Get 0 }}').html(parse(t)); ">Run</button>
-<button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); window.location = window.location.href.split('?')[0] + '?b64=' + encodeURIComponent(btoa(t)); " >Share</button>
+<button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); $.post('https://www.johnwesthoff.com/api/pb/', {'raw': t}, function(result, status){ window.location = window.location.href.split('?')[0] + '?pb=' + encodeURIComponent(result);  });" > Share</button>
 <div id="tb{{ .Get 0 }}"></div>
