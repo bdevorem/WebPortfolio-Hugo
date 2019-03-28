@@ -47,7 +47,7 @@ some code that has been `setInterval`ed.
 You can edit the script. The function `step` is called 50 times a second, and it takes as input a number that increases by one every
 time `step` is called. There are 32 LEDs for you to play iwth in my little example. 
 
-The `Run` button runs your changed code, while the `Share` button reloads the page to a URL that will load the code in the text box, which
+The `Run` button runs the code in the editor, while the `Share` button reloads the page to a URL that will load the code in the text box, which
 you can then share with others.
 
 Here is a description of the helper functions I provide:

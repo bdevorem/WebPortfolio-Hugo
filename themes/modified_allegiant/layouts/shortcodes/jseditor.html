@@ -31,7 +31,6 @@ if (code) {
         }
     }
 }
-eval(editor.getValue());
 </script>
 <button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); $('#tb{{ .Get 0 }}').html(parse(t)); ">Run</button>
 <button id="but" onclick="var t = ace.edit('editor{{ .Get 0 }}').getValue(); $.post('https://www.johnwesthoff.com/api/pb/', {'raw': t}, function(result, status){ window.location = window.location.href.split('?')[0] + '?pb=' + encodeURIComponent(result);  });" > Share</button>
