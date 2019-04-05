@@ -26,6 +26,10 @@ function parse(code) {
     return msg.join('<br>');
 }
 
+step = function(t) {
+
+};
+
 $(function() {
     var gTime = 0;
     var gColors = [];
