@@ -1,6 +1,6 @@
 <?php
     header("Access-Control-Allow-Origin: *");
-    require '/assets/mongo/vendor/autoload.php';
+    require '../../assets/mongo/vendor/autoload.php';
     $collection = (new MongoDB\Client)->pb->pastebin;
     $method = $_SERVER['REQUEST_METHOD'];
     if ('POST' === $method) {
