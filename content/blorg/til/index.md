@@ -35,7 +35,7 @@ of reloading, which is way nicer.
 
 ## 2019-05-16
 ### TIL to do :!python in vim
-I had known for a while about filtering text and the like by using `!command` in [vim](emacs.dev), but it had never occured to me that
+I had known for a while about filtering text and the like by using `!command` in [vim](https://emacs.dev), but it had never occured to me that
 that could be used to write little snippets of code to run in either bash or python. This realization came about because I needed
 to add 100 fields to a struct to test something. 
 
