@@ -1,5 +1,5 @@
 +++
-date = "2019-06-04:03:30-04:00"
+date = "2019-06-04T21:03:30-04:00"
 draft = false
 title = "I've gone completely insane"
 heading = "Blog"
