@@ -6,7 +6,7 @@
 <style type="text/css" media="screen"> #editor { top: 0; right: 0; bottom: 0; left: 0; margin:0 auto;} </style>
 </head>
 <div id="editor{{ .Get 0 }}">{{ if len .Inner | ne 0 }}{{ .Inner }}{{ else }}(+ 1 1){{ end }} </div>
-<script src="https://johnwesthoff.com/js/ace.js"></script>
+<script src="https://johnwesthoff.com/js/ace/src-min-noconflict/ace.js"></script>
 <script>
 var editor = ace.edit("editor{{ .Get 0 }}");
 editor.setTheme("ace/theme/chrome");
