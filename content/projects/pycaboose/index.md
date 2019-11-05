@@ -127,8 +127,7 @@ it will delete everything in the file after and including `# gANLBEsBhnEALg==`, 
 was the comment that defined the value for `myInt`,  before
 re-writing the deleted text, `# gANLB1gGAAAAaGVsbG8hcQCGcQEu`, and the new value, 
 `# gANLBEsChnEALg==`, to the end of the script. Then, when it his the `myStr.value += "!"` line,
-it will again have to delete everything after its corresponding value, rewrite what it deleted,
-and then write the updated value.   
+it will have to do the same as now its value is no longer the last one stored in the script.
 
 So, after all is said and done, the script will read:
 ```python
