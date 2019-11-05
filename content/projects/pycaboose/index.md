@@ -89,7 +89,7 @@ The first time you run it, it will print out
 hello
 ```
 <br>
-However, it will also write to the script itself. Importing **PyCaboose** itself will cause this
+However, it will also write to the script itself. Importing **PyCaboose** at all will cause this
 comment to be added - `# pycaboose #`.  
 Additionally, the line `myInt.value += 1` will cause `# gANLBEsBhnEALg==` to be written,
 and `myStr.value += "!"` will cause `# gANLB1gGAAAAaGVsbG8hcQCGcQEu` to be appended to
