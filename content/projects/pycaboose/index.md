@@ -72,7 +72,7 @@ It then writes all of the other values that it had to delete before writing the 
 
 I think the library is best demonstrated with an example:
 ```python
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from pycaboose import Value
 
 myInt = Value(0)
@@ -98,7 +98,7 @@ the end of the file.
 Thus, after the first run, the script will now read:
 
 ```python
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from pycaboose import Value
 
 myInt = Value(0)
@@ -129,9 +129,9 @@ re-writing the deleted text, `# gANLB1gGAAAAaGVsbG8hcQCGcQEu`, and the new value
 `# gANLBEsChnEALg==`, to the end of the script. Then, when it his the `myStr.value += "!"` line,
 it will have to do the same as now its value is no longer the last one stored in the script.
 
-So, after all is said and done, the script will read:
+After all is said and done, the script will read:
 ```python
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from pycaboose import Value
 
 myInt = Value(0)
@@ -151,3 +151,9 @@ and use it with your own scripts as it is also [on PyPi](https://pypi.org/projec
 although I will provide no guarentee or warranty that it will not lose your data or mangle
 your scripts. It shouldn't / probably won't, but if you do use it, don't use it to store
 important data, and keep a backup of your script (or check it into git).
+
+You can even copy that example into a file and run it after installing the library, and it
+will continue to run with the most up to date values. That's like, the whole point of
+any of this. Later you can send it back to me, and the values will still be saved in the one
+file. I don't propose this as a serious solution (I really intended for it to be a joke), but
+at the same time it isn't entirely useless. I'll actually probably use it on occasion.
