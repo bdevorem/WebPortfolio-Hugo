@@ -1,7 +1,7 @@
 +++
 date = "2017-10-30T00:35:00-04:00"
 draft = false
-title = "AT&T Mobile App Hackathon"
+title = "Winning the AT&T Mobile App Hackathon with a Twitch bot"
 tags = [ "Projects" ]
 categories = [ "For Fun" ]
 series = [ "Hackathon" ]

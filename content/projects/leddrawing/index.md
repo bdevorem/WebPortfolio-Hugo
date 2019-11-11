@@ -1,7 +1,7 @@
 +++
 date = "2019-03-20T20:24:00-04:00"
 draft = false
-title = "LED Drawing"
+title = "Prototyping RGB LED Patterns in JavaScript"
 tags = [ "Projects" ]
 categories = [ "For Fun" ]
 series = [ "2607" ]

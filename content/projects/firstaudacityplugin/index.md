@@ -1,7 +1,7 @@
 +++
 date = "2016-07-10T05:51:53-04:00"
 draft = false
-title = "Embedding Audio With Audacity"
+title = "Embedding Audio Tracks Within Each Other With Audacity"
 tags = [ "Projects", "Audacity", "Audio", "Medic" ]
 categories = [ "For Fun" ]
 series = [ "Audacity" ]

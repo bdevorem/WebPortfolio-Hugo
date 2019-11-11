@@ -1,7 +1,7 @@
 +++
 date = "2018-06-15T02:03:30-04:00"
 draft = false
-title = "My new favorite thing"
+title = "My new favorite thing - CircuitPython"
 heading = "Blog"
 tags = [ "Ads", "CircuitPython" ]
 categories = [ "Ads" ]

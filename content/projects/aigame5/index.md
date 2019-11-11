@@ -1,7 +1,7 @@
 +++
 date = "2017-07-29T23:24:00-04:00"
 draft = false
-title = "Wheel in the Sky"
+title = "AI Game 5 - Progress Update"
 tags = [ "Projects" ]
 categories = [ "For Fun" ]
 series = [ "AI Game" ]
@@ -87,3 +87,8 @@ reports change in rotation. Below I show off the new gyroscope and logging.
 {{< /editor >}}
 
 {{< game >}}
+
+Edit - this was originally titled "Wheel in the Sky" but I was
+told that my article titles were "too confusing" and "often had
+nothing to do with the articles themselves", so I'm trying to
+fix that.
