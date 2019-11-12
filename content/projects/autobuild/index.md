@@ -4,7 +4,7 @@ draft = false
 title = "Automatic Site Rebuilding with PHP and GitHub"
 tags = [ "Projects", "PHP", "Web" ]
 categories = [ "For Fun" ]
-series = [ "For Fun" ]
+series = [ "Automation" ]
 +++
 
 The content of this website is on GitHub
