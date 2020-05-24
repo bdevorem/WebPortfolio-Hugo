@@ -22,6 +22,16 @@ to the front page again. I will also treat it like a stack and put the newest TI
 
 Anyway, here I go!
 
+## 2020-05-24
+### TIL wood stain... stains
+Today I tried staining some plywood for a floating desk for Breezy. The
+stain we chose is one of those combination stain + polyurethane stains.
+Anyway I figured "I don't need gloves", as I picked up the open can, which
+promptly stained my hand and refused to wash off. The internet saved me
+with the suggestion to wash my hands with vegetable oil (I used olive oil)
+then with soap and water. After doing this twice my hands were no longer
+a sticky mess.
+
 ## 2019-05-17
 ### TIL about modifying history entries in JavaScript
 In the prior version of my recent [post on LEDs](/projects/leddrawing/), I did some nonsense to make it possible to share
@@ -64,13 +74,3 @@ for i in range(0, 100):
     print("x{}: u32,".format(i))
 ```
 select it, and bang python I got my 100 fields.
-
-## 2020-05-24
-### TIL wood stain... stains
-Today I tried staining some plywood for a floating desk for Breezy. The
-stain we chose is one of those combination stain + polyurethane stains.
-Anyway I figured "I don't need gloves", as I picked up the open can, which
-promptly stained my hand and refused to wash off. The internet saved me
-with the suggestion to wash my hands with vegetable oil (I used olive oil)
-then with soap and water. After doing this twice my hands were no longer
-a sticky mess.
