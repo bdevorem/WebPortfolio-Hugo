@@ -1,5 +1,5 @@
 +++
-date = "2019-04-16T02:03:30-04:00"
+date = "2020-05-24T02:03:30-04:00"
 draft = false
 title = "TIL Collection"
 heading = "Blog"
@@ -64,3 +64,13 @@ for i in range(0, 100):
     print("x{}: u32,".format(i))
 ```
 select it, and bang python I got my 100 fields.
+
+## 2020-05-24
+### TIL wood stain... stains
+Today I tried staining some plywood for a floating desk for Breezy. The
+stain we chose is one of those combination stain + polyurethane stains.
+Anyway I figured "I don't need gloves", as I picked up the open can, which
+promptly stained my hand and refused to wash off. The internet saved me
+with the suggestion to wash my hands with vegetable oil (I used olive oil)
+then with soap and water. After doing this twice my hands were no longer
+a sticky mess.
