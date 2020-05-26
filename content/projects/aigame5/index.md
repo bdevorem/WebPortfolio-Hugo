@@ -4,7 +4,7 @@ draft = false
 title = "AI Game 5 - Progress Update"
 tags = [ "Projects" ]
 categories = [ "For Fun" ]
-series = [ "AI Game" ]
+series = [ "AI Game", "Interactable" ]
 +++
 Despite the delay, I am still working on my AI/robot game thing.
 A while ago I added what I said would be my next steps, but never
