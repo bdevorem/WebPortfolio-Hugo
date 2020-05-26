@@ -3,7 +3,7 @@ date = "2017-10-31T23:24:00-04:00"
 draft = true
 title = "AI Game Error Reporting"
 tags = [ "Projects" ]
-categories = [ "For Fun" ]
+categories = [ "For Fun", "Interactable" ]
 series = [ "AI Game" ]
 +++
 
