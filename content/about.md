@@ -31,6 +31,6 @@ of wood<sup>2</sup>.
 
 In October I will be getting married to my fianceeington [breezy](http://bashfulbytes.com/). 
 
-<sup>1</sup>Considering Notre Dame would lose that season opener 14-45 and then proceed to not play Michgian for 14 years, *oof*.  
+<sup>1</sup>Considering Notre Dame would lose to Michigan 14-45 the following year and then proceed to not play Michgian for 14 years, *oof*.  
 <sup>2</sup>I did eventually succeed in making a wooden cup - it leaks slowly, but looks *great*!
 
